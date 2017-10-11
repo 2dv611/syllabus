@@ -32,7 +32,7 @@
             <td style="vertical-align: top;">w46</td>
             <td>
                 <ul>
-                    <li>Lecture 03 - Continuos Integration</li>
+                    <li>Lecture 03 - Continuous Integration</li>
                     <li>Seminar</li>
                 </ul>
             </td>
@@ -41,7 +41,7 @@
           <td style="vertical-align: top;">w47</td>
           <td>
               <ul>
-                <li>Lecture 04 - Continuos Delivery</li>
+                <li>Lecture 04 - Continuous Delivery</li>
                 <li>Group Project</li>
                 <li><strong>10.00am DATE – Deadline</strong> handling in Assignment</li>
               </ul>
