@@ -17,6 +17,8 @@ This assignment will have several parts and learning objectives:
 * Automate deployment in different environment maximizing the feedback speed of errors/bugs and the confidence in the code
   * Proper integration tests, notifications when failing and so on
 
+We will not specify a long list of functional requirement. At this level you should be able to think about the problem and identify wanted features by your self. By reading the literature and article you will get the understanding of the parts implemented in a good deployment pipeline and how to bring your software and code changes to production in a fast, confident and secure way. 
+
 #### How to prove you understand continuous delivery
 As a group you must prove your deployment pipeline by working on a software running in the pipeline. Hopefully your pipeline will work for a broad spectra of software projects but in this course we will be focus on the Slack plug-in deployment when testing the pipeline. Of course you could do a "Hello World-example" but that won´t test your solution in a good way and you won´t learn how to work as a developer in this kind of environments. 
 
@@ -41,7 +43,6 @@ Some more questions to think about
 * How will all the booked times be visible for the teachers? A slack-command for teacher or a better visual solution.
 * Should the student be able to rebook the time?
 * If automating the whole thing - How could the teacher specify available time slots? Google calendar? JSON-file?
-
 
 
 
