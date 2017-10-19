@@ -20,7 +20,7 @@ This assignment will have several parts and learning objectives:
 We will not specify a long list of functional requirement. At this level you should be able to think about the problem and identify wanted features by your self. By reading the literature and article you will get the understanding of the parts implemented in a good deployment pipeline and how to bring your software and code changes to production in a fast, confident and secure way. 
 
 #### How to prove you understand continuous delivery
-As a group you must prove your deployment pipeline by working on a software running in the pipeline. Hopefully your pipeline will work for a broad spectra of software projects but in this course we will be focus on the Slack plug-in deployment when testing the pipeline. Of course you could do a "Hello World-example" but that won´t test your solution in a good way and you won´t learn how to work as a developer in this kind of environments. 
+As a group you must prove your deployment pipeline by working on a software running in the pipeline. Hopefully your pipeline will work for a broad spectra of software projects but in this course we will be focus on the Slack plug-in deployment when testing the pipeline. Of course you could do a "Hello World-example" but that won´t test your solution in a good way and you won´t learn how to work as a developer in this kind of environments. We are aiming for continuous Improvement!
 
 To get a better understanding a more complex software project will need to be in place. **Every member of the team should do a lot of commits** and you should use the idea behind continuous integration to get the experience needed.
 
