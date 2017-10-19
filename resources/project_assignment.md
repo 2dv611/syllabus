@@ -24,7 +24,7 @@ As a group you must prove your deployment pipeline by working on a software runn
 
 To get a better understanding a more complex software project will need to be in place. **Every member of the team should do a lot of commits** and you should use the idea behind continuous integration to get the experience needed.
 
-##### A time slot booking plugin
+##### A time slot booking plugin - An example of a plugin to develop
 At the moment the teachers have a suggestion on a plugin to use as an proof of concept when testing your pipeline. The below text is a description of what the plugin(s) will do.
 In most of our courses we have some assignment with a oral examination. This examination is booked by the students directly in the learning platform. As things are today we are having trouble with a couple of things:
 
@@ -43,7 +43,3 @@ Some more questions to think about
 * How will all the booked times be visible for the teachers? A slack-command for teacher or a better visual solution.
 * Should the student be able to rebook the time?
 * If automating the whole thing - How could the teacher specify available time slots? Google calendar? JSON-file?
-
-
-
-
