@@ -10,37 +10,127 @@
 ---
 ## Why this course?
 
-
---
-## The focus
+* Focus on delivering software
+* Building pipelines
+* Taking stuff to production
+* Prepare for thesis?
+* Prepare for working with software...with other people
 
 
 --
 ## What you should know from before
 
+* Testing
+  * Unit, acceptance, integration, non-functional
+  * Writing and implement
+* Working with Git
+  * We will focus on more advanced using
+* Writing code
+* Setting up infrastructure for given software
+* Taking responsibility for your own learning
+
 
 ---
 ## Some definitions - just recap?
+* Innovate 
+  * Doing (good) things we haven´t done before
+* Stakeholder 
+  * How many courses have you heard this? :)
+* Artifacts 
+  * products produced during the development of software
+* Service delivery platform
+  * The platform for delivering software eg. development pipeline 
+* Service delivery flow 
+  * The trip from the beginning to the end
+* Cycle times 
+  * How frequently a flow completes
+
+
+---
+## Some definitions - just recap?
+* Deployment
+  * Pushing a release into production
+* Gate
+  * A limit that prevents the flow. Manual QA for instance
+* Release Candidate
+  * The end result of the build phase. May or may not be deployed
+* Release
+  * Successful completion of an entire flow; including deployment
+* Staging
+  * Environment where integration tests could run
+* Private sandbox 
+  * An environment where experiment can test the software
 
 
 --
 ## Continuous Integration
 
+* Merge code on commit
+  * One code repository
+  * Find errors early!
+  * No integration debts
+* Automated builds
+  * fast builds
+* Automated testing
+  * fast test runs
+* Commit every day
+  * If a commit fails - fix it directly
+* Everyone can see the results of the latest build
+  * Transparence
+
 
 --
 ## Continuous Delivery
 
+> To have the confidence that the artifact(s) going trough the pipeline will work in production.
 
 --
 ## Continuous Deployment
 
+> The whole chain from committing a code change to running the change in production is automated
 
 --
 ## Deployment pipeline
 
-
---
-## Deployment flexibility
+![pipeline](https://github.com/CS-LNU-Learning-Objects/web-application-architecture/raw/master/images/pipeline.png)
 
 
 --
+## What we aim for
+
+* Confidence
+* Reduced risk
+* Shorter time from keyboard to production
+* Less wait time
+  * International timespans
+* Continuous Improvement
+* Job satisfaction
+
+
+---
+## How we will practice this?
+
+* Individual preparation for the seminar
+  * Getting the fundamental knowledge
+  * Thinking about a real problem
+  * Seminar be like a workshop
+* Group project
+  * Setting up the pipeline
+  * Working as a group of developer through the pipeline
+  * Continuous Improvement!
+
+
+--
+## The project
+
+* Service delivery platform for Slack plug-ins for the CoursePress organization
+  * Analyze the problem
+  * Identifying the parts of the flow
+  * Setting up the pipeline
+* Develop a plug-in
+  * Using your pipeline as a developer
+  * Using Continuous Integration in a team
+    * Everyone must commit small changes with confidence
+    * Plans for handling failing
+  * Producing artifacts and infrastructure
+
