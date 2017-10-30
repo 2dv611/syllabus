@@ -31,11 +31,9 @@
 
 
 ---
-## Some definitions - just recap?
+## Some definitions
 * Innovate 
   * Doing (good) things we haven´t done before
-* Stakeholder 
-  * How many courses have you heard this? :)
 * Artifacts 
   * products produced during the development of software
 * Service delivery platform
@@ -47,7 +45,7 @@
 
 
 ---
-## Some definitions - just recap?
+## Some definitions
 * Deployment
   * Pushing a release into production
 * Gate
@@ -60,6 +58,7 @@
   * Environment where integration tests could run
 * Private sandbox 
   * An environment where experiment can test the software
+
 
 
 --
@@ -79,20 +78,24 @@
   * Transparence
 
 
+
 --
 ## Continuous Delivery
 
 > To have the confidence that the artifact(s) going trough the pipeline will work in production.
+
 
 --
 ## Continuous Deployment
 
 > The whole chain from committing a code change to running the change in production is automated
 
+
 --
 ## Deployment pipeline
 
 ![pipeline](https://github.com/CS-LNU-Learning-Objects/web-application-architecture/raw/master/images/pipeline.png)
+
 
 
 --
@@ -107,6 +110,7 @@
 * Job satisfaction
 
 
+
 ---
 ## How we will practice this?
 
@@ -118,6 +122,7 @@
   * Setting up the pipeline
   * Working as a group of developer through the pipeline
   * Continuous Improvement!
+
 
 
 --
