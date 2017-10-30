@@ -1,129 +1,209 @@
-<!-- Course management -->
-## Course management
-| | | |
-|-|-|-|
-| <!-- {_class="table-cell"} -->  ![Jacob](https://www.gravatar.com/avatar/b47109ad8c128221c9dd060d15c89cc9.jpg?s=80) <!-- {_class="grayscale"} --> | <!-- {_class="table-cell"} --> Jacob Lindehoff (Course manager) |
-| <!-- {_class="table-cell"} --> ![John](https://www.gravatar.com/avatar/2261038623688f4d83dc10c53b85efb8.jpg?s=80)<!-- {_class="grayscale"} --> | <!-- {_class="table-cell"} --> John Häggerud (Course instructor) |
-
-
-<!-- {_class="table lnu-course-management"} -->
-Note:
-*
-
-
-
----
 <!-- Syllabus -->
 ## Syllabus
-
+[Syllabus](http://kursplan.lnu.se/kursplaner/kursplan-2dv611-1.pdf)
 * Main field of study
   * Computer Science (dv)
 * Progression
-  * G1F
+  * G2F
 * Prerequisites
-  * "Introduction to Programming (1DV021)" or equivalent
-  * "Systemadministration I (1DV031)" or equivalent
-
-
-http://kursplan.lnu.se/kursplaner/kursplan-1DV032-1.pdf
+  * at least 60 hp Computer Science
+  * 2DV514
 
 
 --
 <!-- Goals -->
 ## After the course you should understand:
 <!-- {_style="font-size: 140%"} -->
-* different virtualization technologies
-* different service models
-* appropriate operation of applications
-* install and manage server operating systems and applications
-* monitoring in a production environment
+* Automatically create and maintain building environments for continuous software delivery
+* integrate test suites in an automated building process
+* explain what A/B testing and Blue Green software delivery are
+* use and evaluate strategies for continuous software delivery
 
-<!-- {_class="lnu-margin-right-30"} -->
-Note:
-Course Goals <br />
-Taken from the course Syllabus <br />
+<!-- {_class="lnu-font-size-80 lnu-margin-right-30"} -->
 
 
---
+---
 ## Approach
 * The course is divided into two parts
-  * Part 1: Virtualization and Service Models
-  * Part 2: Application operations
-* Scheduled activities
-  * 5-6 Lectures
-  * 1 Seminars (part 1)
-  * 2x1h/week tutoring (part 2)
-  * 3 examination assignments
-    * 1 seminar
-    * 1 written examination (part 1)
-    * 1 oral hearings (part 2)
+    * Continuous Delivery Techniques
+    * Group Project
 
 <!-- {_style="font-size: 90%"} -->
-Note:
-Divided the goals into 2 parts<br />
-First part are more theoretical <br />
-Last part very practical & hands on
 
 
 --
 <!-- Part 1 -->
-## Part 1 - Recap and Service Models
-
-Course week 1 - 4
-
+## Part 1 - Continuous Delivery Techniques
 Goals:
-* different virtualization technologies
-* different service models
-* appropriate operation of applications
+* different techniques for continuous software delivery
+* life cycle of software products
+* evaluation of different distribution chains
+
 
 <!-- {_style="margin-right: 25%"} -->
 Todo:
-* 3 lecture - Recap of 1DV031, Virtualization, Service Models
-* 1 seminar (oral examination) Deadline 14/9
-* 1 examination assignment (written examination) Deadline 25/9
+* 1 seminar
+* 1 examination assignment (written examination)
 
 <!-- {_style="font-size: 75%"} -->
-Note:
 
 
 --
-## Part 2 - Application operations
-
-Course week 4 - 9
-
+## Part 2 - Group Project
 Goals:
-* install and manage server operating systems and applications
-* monitoring in a production environment
+* automate distribution chains for software development
+  * Continuous Integration and Continuous Delivery
+  * A/B testing and Blue Green software delivery
 
 <!-- {_class="lnu-margin-right-30"} -->
 Todo:
-* 3 lectures - Docker, Application Platforms
-* 4-5 exercises
-* 1 examination assignment Deadline 26/10
-* 1 oral hearing Deadline 26/10
-* 2 x 1h tutoring/week
+* 1 group assignment
+* 1 oral hearing
+
+<!-- {_style="font-size: 75%"} -->
+
+
+--
+### Preliminary planing  and deadlines
+<table style="margin-left: 5px;">
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>To do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">w44</td>
+      <td>
+        <ul>
+          <li>Lecture 00 – Course Introduction </li>
+          <li>Lecture 01 - Introduction and definitions</li>
+          <li>Go through the Study Material</li>
+          <li>Start working on the assignment</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">w45</td>
+      <td>
+        <ul>
+          <li>Lecture 02 - Delivering software</li>
+          <li>Assignment</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">w46</td>
+      <td>
+        <ul>
+          <li>Lecture 03 - Continuous Integration</li>
+          <li>Seminar</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+--
+### Preliminary planing  and deadlines
+<table style="margin-left: 5px;">
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>To do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">w47</td>
+      <td>
+        <ul>
+          <li>Lecture 04 - Continuous Delivery</li>
+          <li>Group Project</li>
+          <li>
+            <strong>10.00am DATE – Deadline</strong> handling in Assignment</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">w48</td>
+      <td>
+        <ul>
+          <li>Lecture 05 - Deployment Strategies</li>
+          <li>Group Project</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">w49</td>
+      <td>
+        <ul>
+          <li>Lecture 06 - Guest Lecture (Case Study)</li>
+          <li>Group Project</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+--
+### Preliminary planing  and deadlines
+<table style="margin-left: 5px;">
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>To do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">w50-02</td>
+      <td>
+        <ul>
+          <li>Group Project</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">w02</td>
+      <td>
+        <ul>
+          <li>
+            <strong>Jan 11th - Deadline</strong> oral hearing</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 ---
 <!-- Literature -->
 ## Literature
-* [The Practice of System and Network Administration - Third Edition](http://www.adlibris.com/se/organisationer/product.aspx?isbn=0321919165)
-  * Limoncelli, Thomas A.; Hogan , Christina J.; Chalup, Strata R.
-  * Addison ­Wesley Professional
-  * Recommended
-  * ISBN: 0321919165
+* [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://www.adlibris.com/se/bok/continuous-delivery-reliable-software-releases-through-build-test-and-deployment-automation-9780321601919)
+  * Jez Humble, David Farley
+  * Addison-Wesley Professional
+  * ISBN: 9780321601919
 
-![The Practice of System and Network Administration - Third Edition](http://www.adlibris.com/se/organisationer/covers/M/0/32/0321919165.jpg)
-Note:
-Not mandatory but recommended<br />
+![Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://s2.adlibris.com/images/1963095/continuous-delivery-reliable-software-releases-through-build-test-and-deployment-automation.jpg)
 
 
 ---
 <!-- webpage -->
 ## Course webpage
-https://coursepress.lnu.se/kurs/systemadministrationii/
+[https://coursepress.lnu.se/kurs/continuous-delivery](https://coursepress.lnu.se/kurs/continuous-delivery/)
 * Everything static + news
-* Slack: Discussions and questions [#1dv032-sysadmin-2](https://coursepress.slack.com/archives/1dv032-sysadmin-2)
-* 1dv032@lnu.se (Private matters only!)
+* Slack: Discussions and questions [#2DV611-cd](https://coursepress.slack.com/archives/ 2DV611-cd)
+* 2DV611@lnu.se (Private matters only!)
 
 <!-- {_style="margin-right: 25%"} -->
+
+
+---
+<!-- webpage 
+## Course evaluation
+[ 2DV611 Course Evaluation Spring 2016]( 2DV611-course-evaluation-vt16.pdf)
+-->
