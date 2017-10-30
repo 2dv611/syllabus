@@ -6,19 +6,22 @@
 * Common words and definition used in this course
 * The examination assignments
 
+Note: Tralla
+
 
 ---
 ## Why this course?
 
 * Focus on delivering software
-* Building pipelines
+* Building deployment pipelines
 * Taking stuff to production
 * Prepare for thesis?
 * Prepare for working with software...with other people
+  * There will be some coding...
 
 
 --
-## What you should know from before
+## What we expect you to know
 
 * Testing
   * Unit, acceptance, integration, non-functional
@@ -29,35 +32,37 @@
 * Setting up infrastructure for given software
 * Taking responsibility for your own learning
 
+Note: How to write test, when to use them, different kinds and so on.
+
 
 ---
 ## Some definitions
-* Innovate 
-  * Doing (good) things we haven´t done before
-* Artifacts 
-  * products produced during the development of software
+
 * Service delivery platform
-  * The platform for delivering software eg. development pipeline 
+  * The platform for delivering software eg. deployment pipeline 
+  * Validates after every stage in the pipeline (commit, acceptance, staging, production) 
 * Service delivery flow 
   * The trip from the beginning to the end
-* Cycle times 
-  * How frequently a flow completes
+  * Both automatic and manual approvals depending on the step
+
+![pipeline](./images/pipe02.png)
 
 
 ---
-## Some definitions
-* Deployment
-  * Pushing a release into production
-* Gate
-  * A limit that prevents the flow. Manual QA for instance
+## Some more definitions
+* Artifacts 
+  * Products produced during the development of software
 * Release Candidate
   * The end result of the build phase. May or may not be deployed
 * Release
   * Successful completion of an entire flow; including deployment
+* Deployment
+  * Pushing a release into production
+* Gate
+  * A limit that prevents the flow. Manual QA for instance
 * Staging
   * Environment where integration tests could run
-* Private sandbox 
-  * An environment where experiment can test the software
+
 
 
 
