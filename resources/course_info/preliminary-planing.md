@@ -43,7 +43,7 @@
               <ul>
                 <li>Lecture 04 - Continuous Delivery</li>
                 <li>Group Project</li>
-                <li><strong>10.00am DATE – Deadline</strong> handling in Assignment</li>
+                <li><strong>10.00am 22 Nov – Deadline</strong> handling in Assignment</li>
               </ul>
           </td>
       </tr>

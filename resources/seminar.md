@@ -1,5 +1,5 @@
 ## The seminar
-This text describes the seminar taking place in the course 1dv611. This seminar will be about the described [project assignment](project_assignment.md).
+This text describes the seminar taking place in the course 1dv611. This seminar will be about the described [project assignment](/examination/project-assignment/).
 This seminar is an individual assignment meaning that the preparation will be done by the single student and the result will be presented and discussed in groups.
 
 The seminar group will be the same group you will work with later on in the course so we can see this as an seminar/workshop before we will start the group assignment.

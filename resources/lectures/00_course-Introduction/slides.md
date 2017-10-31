@@ -32,38 +32,6 @@
 
 
 --
-<!-- Part 1 -->
-## Part 1 - Continuous Delivery Techniques
-Goals:
-* different techniques for continuous software delivery
-* life cycle of software products
-* evaluation of different distribution chains
-
-
-<!-- {_style="margin-right: 25%"} -->
-Todo:
-* 1 seminar
-* 1 examination assignment (written examination)
-
-<!-- {_style="font-size: 75%"} -->
-
-
---
-## Part 2 - Group Project
-Goals:
-* automate distribution chains for software development
-  * Continuous Integration and Continuous Delivery
-  * A/B testing and Blue Green software delivery
-
-<!-- {_class="lnu-margin-right-30"} -->
-Todo:
-* 1 group assignment
-* 1 oral hearing
-
-<!-- {_style="font-size: 75%"} -->
-
-
---
 ### Preliminary planing  and deadlines
 <table style="margin-left: 5px;">
   <thead>
@@ -123,7 +91,7 @@ Todo:
           <li>Lecture 04 - Continuous Delivery</li>
           <li>Group Project</li>
           <li>
-            <strong>10.00am DATE – Deadline</strong> handling in Assignment</li>
+            <strong>10.00am 22 Nov – Deadline</strong> handling in Assignment</li>
         </ul>
       </td>
     </tr>
