@@ -6,19 +6,22 @@
 * Common words and definition used in this course
 * The examination assignments
 
+Note: Tralla
+
 
 ---
 ## Why this course?
 
 * Focus on delivering software
-* Building pipelines
+* Building deployment pipelines
 * Taking stuff to production
 * Prepare for thesis?
 * Prepare for working with software...with other people
+  * There will be some coding...
 
 
 --
-## What you should know from before
+## What we expect you to know
 
 * Testing
   * Unit, acceptance, integration, non-functional
@@ -29,37 +32,38 @@
 * Setting up infrastructure for given software
 * Taking responsibility for your own learning
 
+Note: How to write test, when to use them, different kinds and so on.
+
 
 ---
-## Some definitions - just recap?
-* Innovate 
-  * Doing (good) things we haven´t done before
-* Stakeholder 
-  * How many courses have you heard this? :)
-* Artifacts 
-  * products produced during the development of software
+## Some definitions
+
 * Service delivery platform
-  * The platform for delivering software eg. development pipeline 
+  * The platform for delivering software eg. deployment pipeline 
+  * Validates after every stage in the pipeline (commit, acceptance, staging, production) 
 * Service delivery flow 
   * The trip from the beginning to the end
-* Cycle times 
-  * How frequently a flow completes
+  * Both automatic and manual approvals depending on the step
+
+![pipeline](./images/pipe02.png)
 
 
 ---
-## Some definitions - just recap?
-* Deployment
-  * Pushing a release into production
-* Gate
-  * A limit that prevents the flow. Manual QA for instance
+## Some more definitions
+* Artifacts 
+  * Products produced during the development of software
 * Release Candidate
   * The end result of the build phase. May or may not be deployed
 * Release
   * Successful completion of an entire flow; including deployment
+* Deployment
+  * Pushing a release into production
+* Gate
+  * A limit that prevents the flow. Manual QA for instance
 * Staging
   * Environment where integration tests could run
-* Private sandbox 
-  * An environment where experiment can test the software
+
+
 
 
 --
@@ -79,20 +83,24 @@
   * Transparence
 
 
+
 --
 ## Continuous Delivery
 
 > To have the confidence that the artifact(s) going trough the pipeline will work in production.
+
 
 --
 ## Continuous Deployment
 
 > The whole chain from committing a code change to running the change in production is automated
 
+
 --
 ## Deployment pipeline
 
 ![pipeline](https://github.com/CS-LNU-Learning-Objects/web-application-architecture/raw/master/images/pipeline.png)
+
 
 
 --
@@ -107,6 +115,7 @@
 * Job satisfaction
 
 
+
 ---
 ## How we will practice this?
 
@@ -118,6 +127,7 @@
   * Setting up the pipeline
   * Working as a group of developer through the pipeline
   * Continuous Improvement!
+
 
 
 --
