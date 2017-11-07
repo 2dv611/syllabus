@@ -1,11 +1,14 @@
 ## Content
 
 * Delivering software
-  * Anti-pattern
-  * Deployment pipeline
-    * Build, deploy
-* modules/packages
-
+  * Anti-patterns
+  * Deployment pipeline / Service delivery platform
+* Continuous improvement
+* Build phase
+  * Handling libraries and own components
+* Deployment phase
+  * Manage application configuration
+  * Handling semi-completed code
 
 Note: Tralla
 
@@ -22,12 +25,20 @@ Note: Tralla
 
 
 --
-## Traditional development processes
+## Development processes
+
+* Serial or waterfall
+  * Ready for release when all functionality has been developed
+* Agile
+  * Ready for release throughout development
+    * Traditional agile believe this should be done at periodic intervals
+* Continuous Delivery
+  * Subset of agile, Software ready for release at ALL time.
+    * Not making a special effort to create a releasable build  
+    * Making software ready for release is NOT a separate activity
+  * Does not mean releasing into production all the time  
 
 
-> Serial or waterfall
-
-> Delaying testing until after the development
 
 ![release](./images/release.png)
 
@@ -123,8 +134,15 @@ Source: The practice of cloud system administration - 0-321-94318-X
     * "Triumph of the Lean Production System"
     * built in high-quality, faster-to-market
 * From lean manufacturing principles
-* focus on removal of wast and reduction of cost
-* Value stream
+  * Eliminate Waste / Create noting but value
+  * Amplify learning - Fast feedback
+  * Decide as late as possible for irreversible actions
+  * Deliver as fast as possible
+  * Respect people - Empower the team
+  * Build integrity in
+  * Optimize the whole value stream - Continuous improvement
+
+https://en.wikipedia.org/wiki/Lean_software_development
 
 
 
@@ -285,10 +303,6 @@ change A => B + D will rebuild then D will rebuild
   * Good naming, DRY, KISS
 
 
----
-## Managing environments
-
-
 --- 
 
 ## Handle changes 
@@ -313,3 +327,9 @@ change A => B + D will rebuild then D will rebuild
 <!-- {_style="font-size: 70%"} -->
 
 ![branch by abstraction](./images/branch_by_abstraction.png)
+
+
+---
+## Reading
+
+> Chapter 1, 2 and 13 in the Continuous Delivery book by Humble and Farley
