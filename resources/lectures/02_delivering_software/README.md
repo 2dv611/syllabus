@@ -14,4 +14,4 @@
 - ~~[Recording](https://youtu.be/#) 2017-10-30, 09.15 (Youtube)~~
 
 ## Literature
-Chapter 1, 13
+Chapter 1, 2 and 13

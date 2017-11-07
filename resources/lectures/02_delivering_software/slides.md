@@ -6,9 +6,11 @@
 * Continuous improvement
 * Build phase
   * Handling libraries and own components
+  * Handling dependencies
 * Deployment phase
   * Manage application configuration
   * Handling semi-completed code
+* Giving a overview of coming lectures
 
 Note: Tralla
 
@@ -25,7 +27,7 @@ Note: Tralla
 
 
 --
-## Development processes
+## Release processes
 
 * Serial or waterfall
   * Ready for release when all functionality has been developed
@@ -48,83 +50,51 @@ Testing first in alpha, holding the version longer. how about changes?<br>
 
 
 --
-## Anti-patterns
+## Anti-patterns when deploy
 * Deploying manually
   * Human errors, bottle necks
   * Not reproducible
     * Unpredictable, no confident in the service/code
   * Different environments (dev, test, production)
-* Late deployment to production
+* Deployment comes in late in the process
   * Bugs is found late
   * Gap between dev and ops
-  * Devs don´t have ops skills (policies)
+    * Devs may not have ops skills (policies)
   * Incorrect assumptions built into system
-* Manual configuration management of production Environments
+* Manual configuration management of production environments
   * Configuration drifts, snowflake servers and so on
 
 Note: caching in local vs. cluster
 
 
 --
-## What do we want?
+## What we seek
 
 * Automated
   * Avoid errors, more confidence
     * Repeatable, reliable, predictable process
   * Self-documented
   * Faster, automate almost everything
-* Frequent
+* Support frequent changes
   * Smaller changes, fewer roll-backs
   * Fast feedback process
-    * code, configuration, host environments, structure of the data
-    * Under control so changes trigger a feedback process
+    * Changes trigger a feedback process
+    * Code, configuration, host environments, structure of the data
 * Bring the pain forward
   * if it hurts, do it more frequently
 
 
 --
-## What do we want?
+## What we seek
 
 * Build quality in
-  * testing is not a phase, it is everywhere
-  * testing is done by everyone
-* Done means release
-  * no 80% done
+  * Testing is not a phase, it is everywhere
+  * Testing is done by everyone
+* Every commit is a release
+  * Nothing is 80% done
 * Everyone is responsible for the delivery process
   * You built it, you run it
 * Everyone is responsible for improvement    
-
-
----
-## Deployment pipeline
-
-> Every change of code, configuration, environment, data structure and so on triggers the creation of a new instance of the pipeline
-
-![pipeline](./images/pipe02.png) 
-
-Every check-in/commit leads to potential release
-
-
---
-## Service Delivery Platform (SDP)
-
-* Different cases, different looking pipelines
-* Build and deploy
-  * Make installable packages
-  * Putting it on servers
-* The service is not just software 
-  * Confidence so that we can innovate
-    * Continuous experimenting
-  * Bringing developer creativity to the customer
-
-
---
-## Service Delivery Platform (SDP)
-
-<img src="./images/sdp.png" width="45%" />
-
-Source: The practice of cloud system administration - 0-321-94318-X
-<!-- {_style="font-size: 40%"} -->
 
 
 --
@@ -143,6 +113,42 @@ Source: The practice of cloud system administration - 0-321-94318-X
   * Optimize the whole value stream - Continuous improvement
 
 https://en.wikipedia.org/wiki/Lean_software_development
+
+
+
+
+---
+## Deployment pipeline
+
+> Every change of code, configuration, environment, data structure and so on triggers the creation of a new instance of the pipeline
+
+![pipeline](./images/pipe02.png) 
+
+Every check-in/commit leads to potential release
+
+
+--
+## Service Delivery Platform (SDP)
+
+* Different cases, different looking pipelines
+* Bringing developer creativity to the customer
+* Build phase
+  * Make installable packages
+* Deploy phase
+  * Putting it on servers
+* The SDP is not just for delivering software 
+  * Confidence so that we can innovate
+    * Continuous experimenting
+  
+
+
+--
+## Service Delivery Platform (SDP)
+
+<img src="./images/sdp.png" width="45%" />
+
+Source: The practice of cloud system administration - 0-321-94318-X
+<!-- {_style="font-size: 40%"} -->
 
 
 
@@ -168,19 +174,19 @@ https://en.wikipedia.org/wiki/Lean_software_development
 
 ---
 ## Build phase
-* Coding step
-* Commit step
+* Coding 
+* Commit 
   * Gate - Pre-submit check
     * Lint, style guide, some tests
-* Build step
+* Build 
   * Source code become artifacts
     * Gate - Unit testing
     * Compiling to executables, making packages, processing images
     * Extracting documentation from source code
-* Package step
+* Package 
   * Single file that encodes all files to be installed
     * zip, tar + installation script  
-* Register step
+* Register
   * Upload the packages to the package registry
 
 
@@ -188,7 +194,8 @@ https://en.wikipedia.org/wiki/Lean_software_development
 --
 ## Tools in the build phase
 * CI servers
-  * Hudson, Jenkins, TravisCI, Cruise Control, Strider CD...
+  * Hudson, Jenkins, TravisCI, Cruise Control, Strider CD, Circle CI...
+    * Uses plug-ins
 * Package managers
   * npm, yarn, compose, NuGet, archive managers...
 * VCS
@@ -196,34 +203,15 @@ https://en.wikipedia.org/wiki/Lean_software_development
 
 
 --
-## Managing dependencies
+## Managing dependencies in build phase
 * Third party libraries/packages/modules, compiled or interpreted
   * Store all libraries locally? Download when needed?
-    * Dependencies?
     * Guarantee exact versions (deep dependencies - package-lock.json)?
     * Rarely updated
-* Own components
-  * build entire app at once on change?
-  * Build only the changed component on change?
-  * Plan for handling dependencies?
-    * Circular dependencies?
-
-
---
-## Own components
-
-* Check into repositories 
-  * Depends on size of project
-* Artifact repository
-* Splitting up to different pipelines 
-  * Different parts have different life cycles
-  * Include os kernel + application 
-  * Some components are very stable and don´t change 
-  * The pipeline becomes to big, to slow
-
-
-
-![integration pipeline](./images/integration_pipeline.png)
+* Own components/packages/modules
+  * Build entire app at once on change?
+  * Build only the needed component on change?
+    * Dependency graph
 
 
 --
@@ -236,9 +224,23 @@ https://en.wikipedia.org/wiki/Lean_software_development
 ```
 change B => B + D will rebuild
 change C => C + D will rebuild
-change A => B + D will rebuild then D will rebuild
+change A => B + C will rebuild then D will rebuild
 ```
 
+
+--
+## Multiple pipelines
+
+* Splitting up to different pipelines 
+  * Different parts have different life cycles
+    * Include os kernel + application 
+    * Some components are very stable and don´t change 
+  * The pipeline becomes to big, to slow
+  * Different teams, micro services
+
+
+
+![integration pipeline](./images/integration_pipeline.png)
 
 
 
@@ -249,16 +251,18 @@ change A => B + D will rebuild then D will rebuild
 
 
 --
-## Deployment phase
-* Promotion of components
-  * Package A - 1.1, 1.2, 1.3(production)
-  * Package B - 1.4.1, 1.4.2(production), 1.4.3
-  * Package C - 4.1, 4.2(production)
-    * Marked as production versions (tagging)
-    * Test and dev may always use latest
-  * Pinning versions
-    * package-lock.json (npm shrinkwrap)
-    * Pinning the exact versions used for a release
+## Deployment phase - Promotion
+* Promotion - Select versions for release
+* Different package repository systems work different
+* Tagging
+  * Package A - 1.1, 1.2, 1.3(production tag)
+  * Package B - 1.4.1, 1.4.2(production tag), 1.4.3
+  * Package C - 4.1, 4.2(production tag)
+    * Marked as production versions 
+* Pinning 
+  * package-lock.json (npm shrinkwrap)
+  * Pinning the exact versions used for a release
+* Test and dev may always use latest
 
 
 --
@@ -266,7 +270,6 @@ change A => B + D will rebuild then D will rebuild
 * Installation
   * pre-install scripts
   * post-install scripts
-    * smoke tests
 * Configuration
   * Configuration management
   * Convergent orchestration
@@ -275,7 +278,7 @@ change A => B + D will rebuild then D will rebuild
     * multistep to achieve desire goal
 
 
---
+---
 ## Testing
 * Gates in the pipeline
   * unit test, integration test/system test, health checks
@@ -308,10 +311,11 @@ change A => B + D will rebuild then D will rebuild
 ## Handle changes 
 * How to make changes?
 * How to handle semi-completed code?
-  * Feature hiding/toggling
+  * Feature hiding
+  * Feature toggling
   * Branch by abstraction
-    * Building an abstract layer upon the piece that should change
-    
+  
+
 
 -- 
 ## Branch by abstraction
@@ -323,7 +327,7 @@ change A => B + D will rebuild then D will rebuild
 * Update the abstraction to point to the new implementation
 * Remove the old implementation (and abstraction layer if needed) 
 </div>
-<!-- {_style="font-size: 70%"} -->
+<!-- {_style="font-size: 80%"} -->
 
 ![branch by abstraction](./images/branch_by_abstraction.png)
 
@@ -332,3 +336,5 @@ change A => B + D will rebuild then D will rebuild
 ## Reading
 
 > Chapter 1, 2 and 13 in the Continuous Delivery book by Humble and Farley
+
+> Next time, Continuous Integration 
