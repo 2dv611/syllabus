@@ -311,8 +311,7 @@ change A => B + D will rebuild then D will rebuild
   * Feature hiding/toggling
   * Branch by abstraction
     * Building an abstract layer upon the piece that should change
-
-
+    
 
 -- 
 ## Branch by abstraction
