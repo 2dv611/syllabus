@@ -17,9 +17,4 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/380xKP1PNlo?t=14m57s&list=PLSWJPPj5sKmry_AUw35ypwxNBUU9YK1K-" frameborder="0" allowfullscreen></iframe>
 
 ## Literature
-<<<<<<< HEAD
-Chapter 1, 13
-
-=======
 Chapter 1, 2 and 13
->>>>>>> 7f9dc9c3664e4c99c857c859100ef7dba36c1055
