@@ -3,6 +3,7 @@ This text describes the seminar taking place in the course 1dv611. This seminar 
 This seminar is an individual assignment meaning that the preparation will be done by the single student and the result will be presented and discussed in groups.
 
 The seminar group will be the same group you will work with later on in the course so we can see this as an seminar/workshop before we will start the group assignment.
+The seminar will be on the **15th of November**, group 1 at **10.15** and group 2 at **13.15**, we will use Slack.
 
 ### Groups
 **Group 1** <br />
