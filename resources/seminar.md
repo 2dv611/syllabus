@@ -4,7 +4,7 @@ This seminar is an individual assignment meaning that the preparation will be do
 
 The seminar group will be the same group you will work with later on in the course so we can see this as an seminar/workshop before we will start the group assignment.
 
-### Groups
+### Groups <br />
 **Group 1**
 Johan Gudmundsson <br />
 Francis Pi <br />
@@ -13,12 +13,12 @@ Fredrik Olsson <br />
 Fredrik Wällstedt <br />
 Leif Karlsson <br />
 
-**Group 2**
+**Group 2** <br />
 Axel Nilsson <br />
 Andras Balla <br />
 Pär Eriksson <br />
 Olga Christensen <br />
-Tommy Kronstål <br />
+Tommy Kronstål
 
 ## To do
 In this seminar the idea is that everyone should be well informed and prepared with the problem and have done some thinking about possible solutions. Hopefully during the seminar the group could give each other good feedback and the group as one can find a good solution together.
