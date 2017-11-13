@@ -4,8 +4,8 @@ This seminar is an individual assignment meaning that the preparation will be do
 
 The seminar group will be the same group you will work with later on in the course so we can see this as an seminar/workshop before we will start the group assignment.
 
-### Groups <br />
-**Group 1**
+### Groups
+**Group 1** <br />
 Johan Gudmundsson <br />
 Francis Pi <br />
 Martin Sigfast <br />
