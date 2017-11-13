@@ -141,18 +141,89 @@ Source: https://www.code-maze.com/top-8-continuous-integration-tools/
 
 > Always releasable - How?
 
+* Start of project
+  * No releasable code?
+* How to implement features that take a while to develop
+  * Pure CI?
+    * Use feature hiding/toggle/branch by abstraction
+  * Feature branches?
+
+  
+--
+## How to work with your VCS
+* Not only version control, also how to work in a team
+  * Many team members
+  * Coordinate and optimize code updates
+* Branching
+  * Make a branch to keep work isolated
+* Merging(Rebasing)
+  * Bringing branches together, applying the changes
+
+  
+--
+## Branching
+
+* Feature branches - developing new features
+  * `git checkout -b newFeature master`
+* Release branches - A branch holding a specific release
+  * Critical bugs on release
+* Bug/hotfix branches
+* Story branches 
+* Merging conflicts and broken builds
+
+![branching](./images/branching.png)  
+
+https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+
 
 --
-## feature branch
+## Is branching against CI?
+
+![CI](./images/branch_ci_1.png)
 
 
+--
+## Solutions?
+
+* Be pragmatic!
+* No long-lived branches!
+* Size of the group?
+  * Branching could work
+* Always do real testing on you branches before merging (into master branch)
+* Rebase from dependent branches (master branch)
+  * Could polute feature branch if active master branch
+
+![CI](./images/branch_ci_2.png)
+
+
+--
+## Merge vs. Rebase
+* Merge
+  * Having a developing on a feature branch. When you want to bring those changes back to master. You **merge** this change into master
+* Rebase
+  * When pulling changes from master onto your feature branch/local development. Then use **rebase**
+
+
+--
+## Git commands you need to know
+
+```
+git checkout 
+git merge
+git rebase
+git reflog
+git reset
+git log
+git revert
+```
+
+
+---
 ## The commit step
 
 ![image of commit step](./image/commit_step.png)
   
 
-
---
 
 ---
 ## Reading
