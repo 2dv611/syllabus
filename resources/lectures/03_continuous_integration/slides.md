@@ -2,7 +2,11 @@
 
 * Continuous Integration
   * Definition (again)
-* Branching
+  * CI servers
+    * Demo
+* Branching vs CI
+  * Patterns
+  * Merging, rebasing
 
 
 ---
@@ -17,8 +21,8 @@
   * Software works until it broken
 * VCS, Automated builds (CI -server), Agreement of the team
 
---
 
+--
 ## Practices
 
 * Check in regularly
@@ -31,7 +35,7 @@
   * Working with feature branches?
     * Branches != CI?
     * Long-lived branches will have integration problems
-    
+
 
 --
 ## Practices
@@ -47,21 +51,38 @@
 * Be prepared to revert
   * Can´t fix the problem in 10 minutes - revert
   * Don´t comment out the tests
-* Fail on warnings? - Code quality?
-  * Code coverage limit?
-  * Number of ToDos
-* Have a Build master?
-  * Rotating role in big teams
-  * When introducing the pipeline
+
+
+
+---
+## The commit stage
+* The entrance to the deployment pipeline (on success)
+  * Fast feedback
+    * Even in the IDE
+    * Tools (CI servers) that makes pretested commits
+  * What should break the build?
+    * code coverage? Warnings? Numbers of ToDos
+  * Have a Build master?
+    * Rotating role in big teams
+    * When introducing the pipeline
+
+<div>
+![commit stage](./images/commit_stage.png)
+<!-- {_style="width: 25%"} -->
+</div>
+<!-- {_class="center"} -->
+
 
 --
-## About testing in the pipeline
+## About testing in the commit step
 * Test pyramid
-
+  * Avoid UI testing
+  * Avoid hitting DB
+  * Mocks and stubs
+  * Use dependency injections
 * Keep it fast, keep it short
   * If it take to long time people will ignore it
   * Risk of getting multiple commits in the pipeline
-  
 
 
 ---
@@ -69,17 +90,17 @@
 * Long-running process
   * Execute workflows at regular intervals
   * Polls the CSV
-  * Pulls on triggers
+  * Pulls on triggers, jobs trigger other jobs 
+    * Building pipelines
 * A view of the build and test result
   * Everyone should see the status
     * test coverage, performance, analyses
     * green/red - integration with physical things
+* Artifact repository?
+  * There are commercial systems
+    * like JFrogs "Artifactory"
+    * Version control, tagging, pinning and so on
 
-
---
-## Artifact repository
-
-* Most modern CI servers have built-in support for some kind of artifact repository
 
 --
 ## CI servers
@@ -90,7 +111,11 @@
   * Web UI 
   * Forked from Hudson 2011 (Oracle claimed the name)
 
+<div>
 ![jenkins screenshot](./images/jenkins.png)
+<!-- {_style="width: 45%"} -->
+</div>
+<!-- {_class="center"} -->
 
 
 --
@@ -104,6 +129,8 @@
   
 ![travis screenshot](./images/travis.png)
 
+
+
 --
 ## CI servers
 
@@ -113,6 +140,8 @@
   * Include the concepts of more complex pipelines
 
 ![Go CD screenshot](./images/gocd.png)
+
+
 
 --
 ## CI servers
@@ -127,14 +156,17 @@
   * CodeShip
     * Cloud service, Pro versions have Docker support
 
+<p>
 Source: https://www.code-maze.com/top-8-continuous-integration-tools/
-<!-- {_style="font-size: 40%"} -->
+</p>
+<!-- {_style="font-size: 70%"} -->
 
 
 --
 ## Short demo
 
 > Setting up a node.js "Hello world" on Jenkins
+
 
 ---
 ## How to work in your pipeline?
@@ -146,9 +178,11 @@ Source: https://www.code-maze.com/top-8-continuous-integration-tools/
 * How to implement features that take a while to develop
   * Pure CI?
     * Use feature hiding/toggle/branch by abstraction
-  * Feature branches?
+  * But VCS have branches?
+    * Pure CI/lean call this waste
+    * Many people work with the code base - avoid disturbing work
 
-  
+
 --
 ## How to work with your VCS
 * Not only version control, also how to work in a team
@@ -156,44 +190,107 @@ Source: https://www.code-maze.com/top-8-continuous-integration-tools/
   * Coordinate and optimize code updates
 * Branching
   * Make a branch to keep work isolated
+  * Lots of different branch patterns
+  * **Never have long-lived branches**
 * Merging(Rebasing)
   * Bringing branches together, applying the changes
+  * Risk of merge conflicts - time consuming
+    * What is the right code to merge?
+    * Semantic conflicts - Rename the class while adding class references
+    * More branches smaller changes
+    * Merge often!
 
-  
+
 --
-## Branching
+## Branching (or not)
 
-* Feature branches - developing new features
+* Develop on mainline/master
+* Story/Feature branches
   * `git checkout -b newFeature master`
-* Release branches - A branch holding a specific release
-  * Critical bugs on release
-* Bug/hotfix branches
-* Story branches 
+* Release branches
+* Team branches
 * Merging conflicts and broken builds
 
-![branching](./images/branching.png)  
 
-https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+
+
+--
+# Develop on master
+* All check/push code into master
+* This ensure CI, changes handled directly
+* Avoid merge- and integration hell
+* Rarely use branches
+  * Release branches
+  * Spikes
+    * Test how much work to solve or work around a issue
+    * Letting people getting familiar with new tools...
+  * Never merge back
+
+
+--
+## Branch for release
+* Acceptable to create branch short before a release
+  * Only add critical bug fixes
+  * Merge directly to master
+* New development and features always goes into master
+  * Dev can start work direct after release branch
+* Tag the branch on release
+* Could be hard in large teams
+  * Modularity in the code helps
+  * API interfaces
+* If you do once-a-week releases it may be cheaper with check into master
+
+
+--
+![better branch](./images/better_branch.png)
+<!-- {_style="width: 70%"} -->
+
+Image from: Continuous Delivery, Humble and Farley
+<!-- {_style="font-size: 40%"} -->
+
+
+--
+## Branch by feature/story
+* Every story or feature will be a branch
+  * After completion and testing - merge into master 
+  * Keeps the master clean - Check-ins won´t interfere 
+* **Branches must be short lived!** 
+* Limit the number of open branches
+* Using "pull requests"
+
+
+
+![branching](./images/branching.png)  
+<!-- {_style="width: 40%"} -->
+
 
 
 --
 ## Is branching against CI?
+* No, not if handle right
+* Release branching is fine
+* Feature branching could be antithetical to CI!
+  * Could easy become an anti-pattern
 
 ![CI](./images/branch_ci_1.png)
+![CI](./images/branch_ci_2.png)
 
 
 --
 ## Solutions?
 
 * Be pragmatic!
-* No long-lived branches!
+  * Use CI servers
+* No long-lived branches! No long-lived branches!
+  * No long-lived branches!
 * Size of the group?
-  * Branching could work
+  * Feature branching will work if carefully
+  * Start with checking into master or release branching
 * Always do real testing on you branches before merging (into master branch)
 * Rebase from dependent branches (master branch)
-  * Could polute feature branch if active master branch
+  * Could pollute feature branch if active master branch
+* Find your solution, the release process should be seamless
 
-![CI](./images/branch_ci_2.png)
 
 
 --
@@ -217,15 +314,11 @@ git log
 git revert
 ```
 
-
----
-## The commit step
-
-![image of commit step](./image/commit_step.png)
-  
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+<!-- {_style="font-size: 40%"} -->
 
 
 ---
 ## Reading
 
-> Chapter 3, 5, 7 and 14 in the Continuous Delivery book by Humble and Farley
+> Chapter 3, 5, 7 and 14 (skip Distribution version control systems) in the Continuous Delivery book by Humble and Farley
