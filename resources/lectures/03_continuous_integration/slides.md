@@ -292,7 +292,14 @@ Image from: Continuous Delivery, Humble and Farley
 * Find your solution, the release process should be seamless
 
 
+--
+## More
+* Git workflow
+ * https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+* Forking workflows
+  * https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
 
+  
 --
 ## Merge vs. Rebase
 * Merge
