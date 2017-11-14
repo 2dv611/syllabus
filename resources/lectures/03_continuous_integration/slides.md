@@ -84,6 +84,7 @@
   * If it take to long time people will ignore it
   * Risk of getting multiple commits in the pipeline
 
+https://medium.com/@eliasnogueira/trust-your-pipeline-automatically-testing-an-end-to-end-java-application-4a33232180c3
 
 ---
 ## CI - software
@@ -299,7 +300,7 @@ Image from: Continuous Delivery, Humble and Farley
 * Forking workflows
   * https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
 
-  
+
 --
 ## Merge vs. Rebase
 * Merge
