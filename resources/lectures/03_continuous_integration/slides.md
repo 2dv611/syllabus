@@ -2,75 +2,82 @@
 
 * Continuous Integration
   * Definition (again)
+  * Commit Stage
   * CI servers
-    * Demo
-* Branching vs CI
+    * Some kind of demo...
+* Branching vs Continuous Integration
   * Patterns
   * Merging, rebasing
+  * Is branching bad?
 
 
 ---
-## Definitions of CI
-
-* Keep the software at working state all the time
+## Continuous Integration
 * Regular integration of code base
-* 1999, Kent Beck, "extreme programming explained"
-* Without CI
-  * Software is broken until proven it works
-* With CI
-  * Software works until it broken
-* VCS, Automated builds (CI -server), Agreement of the team
+  * Avoid integration debts
+* 1999ish, Kent Beck, "extreme programming explained"
+  * The phrase has been used earlier
+* Keep the software at working state all the time
+  * Without CI - Software is broken until proven it works
+  * With CI - Software works until it broken
+* Key concepts
+  * Single source repository
+  * Automated builds (CI -server)
+  * Self-testing
+  * Agreement of the team
 
 
 --
-## Practices
+## Best practices
 
 * Check in regularly
   * A couple of times per day
+    * Every developer!
   * This means smaller changes
     * Less chance of breaking the build
     * Refactor discipline, preserve behavior of the software
-    * regular breaks from coding, avoid tunnel vision
+    * Regular breaks from code mode, avoid tunnel vision
   * Fix broken build fast
-  * Working with feature branches?
-    * Branches != CI?
-    * Long-lived branches will have integration problems
+    * Don´t check in on a broken build
+    * Have a plan, confidence in fixing broken builds
+  * Be prepared to revert
+    * Can´t fix the problem in 10 minutes - revert
+    * Don´t comment out the tests
 
 
 --
-## Practices
-* Don´t check in on a broken build
-  * Priority to fix broken build
-* Run tests both at the developer and in the CI server
-  * Update from CSV
-  * Run tests and build
-  * Commit - Push
+## Best practices
 * The one that check in must monitor the build process
   * Should not start new work until build is OK
-  * No lunch, Don´t go home
-* Be prepared to revert
-  * Can´t fix the problem in 10 minutes - revert
-  * Don´t comment out the tests
-
+    * No lunch, Don´t go home...
+* Everyone should see the latest build
+  * No blame game...
+* Run tests both at the developer and in the CI server
+  * Update from CSV, easy to get the latest version
+  * Run tests and build, keep it fast
+  * Commit - Push
+* Test in production environment
+  * Automate the deployment?
 
 
 ---
-## The commit stage
+## Start with the commit stage
 * The entrance to the deployment pipeline (on success)
-  * Fast feedback
-    * Even in the IDE
+  * Early testing => Fast feedback
+    * Even in the IDE (unit test, lint, syntax, style checking, code quality)
     * Tools (CI servers) that makes pretested commits
   * What should break the build?
-    * code coverage? Warnings? Numbers of ToDos
+    * Code coverage? Warnings? Numbers of ToDos?
   * Have a Build master?
     * Rotating role in big teams
-    * When introducing the pipeline
+    * When introducing the pipeline to a team
 
 <div>
 ![commit stage](./images/commit_stage.png)
 <!-- {_style="width: 25%"} -->
 </div>
 <!-- {_class="center"} -->
+
 
 
 --
@@ -85,19 +92,23 @@
   * Risk of getting multiple commits in the pipeline
 
 https://medium.com/@eliasnogueira/trust-your-pipeline-automatically-testing-an-end-to-end-java-application-4a33232180c3
+<!-- {_style="font-size: 45%"} -->
+
 
 ---
 ## CI - software
 * Long-running process
   * Execute workflows at regular intervals
-  * Polls the CSV
-  * Pulls on triggers, jobs trigger other jobs 
+  * Pull changes from CSV
+    * Pulls on triggers (e.g. web hooks)
+  * Jobs/Stages trigger other jobs/stages
+    * Building, testing, running scripts 
     * Building pipelines
 * A view of the build and test result
   * Everyone should see the status
-    * test coverage, performance, analyses
-    * green/red - integration with physical things
-* Artifact repository?
+    * Test coverage, performance, analyses
+    * Green/red - integration with physical things?
+* Artifact repository often included (some kind of)
   * There are commercial systems
     * like JFrogs "Artifactory"
     * Version control, tagging, pinning and so on
@@ -107,14 +118,15 @@ https://medium.com/@eliasnogueira/trust-your-pipeline-automatically-testing-an-e
 ## CI servers
 
 * Jenkins
-  * Open source, JAVA, 
+  * Open source, JAVA, Mature, Most popular?
+    * Forked from Hudson 2011 (Oracle claimed the name)
   * Flexible with lots and lots of plugin 
   * Web UI 
-  * Forked from Hudson 2011 (Oracle claimed the name)
+    * REST API, Jenkinsfile (groovy)
 
 <div>
 ![jenkins screenshot](./images/jenkins.png)
-<!-- {_style="width: 45%"} -->
+<!-- {_style="width: 40%"} -->
 </div>
 <!-- {_class="center"} -->
 
@@ -123,13 +135,16 @@ https://medium.com/@eliasnogueira/trust-your-pipeline-automatically-testing-an-e
 ## CI servers
 
 * Travis CI
-  * SAAS, https://travis-ci.org/travis
+  * SAAS, https://travis-ci.org/
   * Build and test projects on GitHub
+    * Try it through "GitHub education pack"
+    * Free for open source projects
   * travis.yml - root at the repository
-  * Free for open source projects
-  
+<div>  
 ![travis screenshot](./images/travis.png)
-
+<!-- {_style="width: 60%"} -->
+</div>
+<!-- {_class="center"} -->
 
 
 --
@@ -164,9 +179,10 @@ Source: https://www.code-maze.com/top-8-continuous-integration-tools/
 
 
 --
-## Short demo
+## Some kind of demo
 
-> Setting up a node.js "Hello world" on Jenkins
+> Showing a dummy node.js application on Jenkins with code coverage, lint, style check (standard.js) and some testing
+
 
 
 ---
@@ -174,14 +190,18 @@ Source: https://www.code-maze.com/top-8-continuous-integration-tools/
 
 > Always releasable - How?
 
-* Start of project
-  * No releasable code?
+* Start from scratch
+  * No releasable artifacts?
+  * Be pragmatic
+    * But use the pipeline and workflows as fast as you can
 * How to implement features that take a while to develop
   * Pure CI?
     * Use feature hiding/toggle/branch by abstraction
-  * But VCS have branches?
-    * Pure CI/lean call this waste
+  * But my VCS do have branches...
     * Many people work with the code base - avoid disturbing work
+      * Non releasable code in branches?
+      * Is branches bad?
+   
 
 
 --
@@ -193,26 +213,26 @@ Source: https://www.code-maze.com/top-8-continuous-integration-tools/
   * Make a branch to keep work isolated
   * Lots of different branch patterns
   * **Never have long-lived branches**
-* Merging(Rebasing)
+* Merging
   * Bringing branches together, applying the changes
   * Risk of merge conflicts - time consuming
-    * What is the right code to merge?
+    * What is the right code to merge in a conflict?
     * Semantic conflicts - Rename the class while adding class references
-    * More branches smaller changes
+    * More branches smaller changes?
     * Merge often!
 
 
 --
-## Branching (or not)
+## Branching patterns/workflows
 
 * Develop on mainline/master
+* Release branches
 * Story/Feature branches
   * `git checkout -b newFeature master`
-* Release branches
 * Team branches
-* Merging conflicts and broken builds
 
-
+![branches](./images/branches.png)
+<!-- {_style="width: 35%"} -->
 
 
 --
@@ -225,20 +245,21 @@ Source: https://www.code-maze.com/top-8-continuous-integration-tools/
   * Spikes
     * Test how much work to solve or work around a issue
     * Letting people getting familiar with new tools...
-  * Never merge back
+  * Never merge back to master
+    * Bug fixes in master
 
 
 --
-## Branch for release
+## Release branches
 * Acceptable to create branch short before a release
   * Only add critical bug fixes
-  * Merge directly to master
+  * Merge these directly to master
 * New development and features always goes into master
   * Dev can start work direct after release branch
 * Tag the branch on release
-* Could be hard in large teams
-  * Modularity in the code helps
-  * API interfaces
+* Could be tricky in large teams
+  * Modularity in the code helps 
+  * API interfaces between components
 * If you do once-a-week releases it may be cheaper with check into master
 
 
@@ -251,19 +272,28 @@ Image from: Continuous Delivery, Humble and Farley
 
 
 --
-## Branch by feature/story
+## Story/Feature branches
 * Every story or feature will be a branch
   * After completion and testing - merge into master 
   * Keeps the master clean - Check-ins won´t interfere 
 * **Branches must be short lived!** 
-* Limit the number of open branches
-* Using "pull requests"
+* Limit the number of open branches!
+* Could use "pull requests"
 
 
 
 ![branching](./images/branching.png)  
 <!-- {_style="width: 40%"} -->
 
+
+--
+## Team branches
+* Try solving the problem with big teams
+  * Create small teams with own branch
+    * Merge from master daily
+  * When story is done, stabilize the branch, merge to master
+    * Run all kind of tests
+    * Make release
 
 
 --
@@ -280,17 +310,17 @@ Image from: Continuous Delivery, Humble and Farley
 --
 ## Solutions?
 
-* Be pragmatic!
-  * Use CI servers
+* Use CI servers
 * No long-lived branches! No long-lived branches!
-  * No long-lived branches!
+  * NO LONG-LIVED BRANCHES!
 * Size of the group?
   * Feature branching will work if carefully
   * Start with checking into master or release branching
 * Always do real testing on you branches before merging (into master branch)
-* Rebase from dependent branches (master branch)
-  * Could pollute feature branch if active master branch
+* Rebase from master branch before running tests to catch changes
+  * Could pollute the branch if active master branch
 * Find your solution, the release process should be seamless
+  * Bring the pain forward...
 
 
 --
@@ -299,14 +329,6 @@ Image from: Continuous Delivery, Humble and Farley
  * https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 * Forking workflows
   * https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
-
-
---
-## Merge vs. Rebase
-* Merge
-  * Having a developing on a feature branch. When you want to bring those changes back to master. You **merge** this change into master
-* Rebase
-  * When pulling changes from master onto your feature branch/local development. Then use **rebase**
 
 
 --
