@@ -28,3 +28,5 @@ Chapter 3, 5, 7 and 14
   * https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
 * Git branching and merging
   * https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+* Tutorial for the "demo"
+  * https://strongloop.com/strongblog/roll-your-own-node-js-ci-server-with-jenkins-part-1/
