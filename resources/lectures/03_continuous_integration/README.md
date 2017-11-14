@@ -11,10 +11,10 @@
 
 ## Resources
 - [HTML-presentation](https://rawgit.com/2dv611/syllabus/master/resources/lectures/03_continuous_integration/index.html#/)
-- [Recording](#) 2017-11-14 (Youtube)
+- [Recording](https://youtu.be/VcoLuTRvEoA?t=14m57s&list=PLSWJPPj5sKmry_AUw35ypwxNBUU9YK1K-) 2017-11-14, 09.15 (Youtube)
 
 <br />
-<iframe width="560" height="315" src="#" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VcoLuTRvEoA?t=14m57s&list=PLSWJPPj5sKmry_AUw35ypwxNBUU9YK1K-" frameborder="0" allowfullscreen></iframe>
 
 ## Literature
 Chapter 3, 5, 7 and 14
