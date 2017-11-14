@@ -53,7 +53,7 @@
 * Everyone should see the latest build
   * No blame game...
 * Run tests both at the developer and in the CI server
-  * Update from CSV, easy to get the latest version
+  * Update from VCS, easy to get the latest version
   * Run tests and build, keep it fast
   * Commit - Push
 * Test in production environment
@@ -99,7 +99,7 @@ https://medium.com/@eliasnogueira/trust-your-pipeline-automatically-testing-an-e
 ## CI - software
 * Long-running process
   * Execute workflows at regular intervals
-  * Pull changes from CSV
+  * Pull changes from VCS
     * Pulls on triggers (e.g. web hooks)
   * Jobs/Stages trigger other jobs/stages
     * Building, testing, running scripts 
