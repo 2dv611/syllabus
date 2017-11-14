@@ -11,14 +11,13 @@ Johan Gudmundsson <br />
 Francis Pi <br />
 Martin Sigfast <br />
 Fredrik Olsson <br />
-Fredrik Wällstedt <br />
 Leif Karlsson <br />
 
 **Group 2** <br />
 Axel Nilsson <br />
 Andras Balla <br />
 Pär Eriksson <br />
-Olga Christensen <br />
+Fredrik Wällstedt <br />
 Tommy Kronstål
 
 ## To do
