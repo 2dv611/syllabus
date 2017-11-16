@@ -32,7 +32,7 @@
             <td>
                 <ul>
                     <li>Lecture 03 - Continuous Integration</li>
-                    <li>Seminar</li>
+                    <li>Seminar/Workshop</li>
                 </ul>
             </td>
         </tr>
@@ -41,8 +41,8 @@
           <td>
               <ul>
                 <li>Lecture 04 - Continuous Delivery</li>
+                <li>Seminar report</li>
                 <li>Group Project</li>
-                <li><strong>10.00am 22 Nov – Deadline</strong> handling in Assignment</li>
               </ul>
           </td>
       </tr>
@@ -52,6 +52,7 @@
               <ul>
                 <li>Lecture 05 - Deployment Strategies</li>
                 <li>Group Project</li>
+                <li><strong>08.00am 27 Nov – Deadline</strong> handling in Assignment</li>
               </ul>
           </td>
       </tr>
