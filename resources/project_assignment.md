@@ -44,7 +44,7 @@ Some more questions to think about
 * Should the student be able to rebook the time?
 * If automating the whole thing - How could the teacher specify available time slots? Google calendar? JSON-file?
 
-### Examination
+## Examination
 The grade on this part is individual. The grading is from A to F, where F means fail. Here follow a short definition of some of the grades:
 
 There are different examinations in this part
