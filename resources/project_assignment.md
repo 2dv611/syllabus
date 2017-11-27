@@ -43,3 +43,57 @@ Some more questions to think about
 * How will all the booked times be visible for the teachers? A slack-command for teacher or a better visual solution.
 * Should the student be able to rebook the time?
 * If automating the whole thing - How could the teacher specify available time slots? Google calendar? JSON-file?
+
+### Examination
+The grade on this part is individual. The grading is from A to F, where F means fail. Here follow a short definition of some of the grades:
+
+There are different examinations in this part
+
+* Oral individual examination
+  * Here you have to book a examination time with the course management and you will answer a few theoretical questions from the course.
+* Group project
+  * The artifact of the group work
+* Individual report from the group work
+  * In this project you should write a own individual group report to show your own involvement in the project (see below for more instructions)
+* Reflection on the other groups work
+  * In the end of the course you should reflect on the other groups work when trying there project (see below for more instructions)
+
+
+### Individual report from the group work
+Since the grade is individual you have the chance to reflect over your (and the groups) work in a personal report. It will only be read by the examiners. The goal of the repost is to show your involvement and understanding of the project along with a more detailed view of what you have done and how much time you have spend on the assignment. The following part should (at least) be part of the report. Feel free to add own headlines. 
+
+* Background of the project
+* Choice of technology - with motivation
+* Your work
+  * What have you done in the project
+  * Your time report
+* Personal reflection of the project
+  * Problems and solutions
+  * What is good, what is bad
+  * How have the group worked together
+  * What have you learn during this assignment
+  * What would you done in another way if you had the chance
+
+Format: pdf
+Email: 2dv611@lnu.se
+
+### Reflection on the other groups pipeline
+In this step you should do a group reflection on the other groups work. This means that you as a group should test it and see how easy it is to work with, how the documentation is set up and so on.
+Only one report per group. 
+
+Format: pdf
+Email: 2dv611@lnu.se
+
+
+#### Grading matrix
+The final grade (A-F) is a grade based on all the above examination assignments.
+
+A - For an excellent performance - the students have a very good knowledge of the subject and can discuss about the oral questions on a high level. The student have solved the assignments before the deadline and presented artifacts showing he/she have a high level of understanding for all aspects of the relevant material.
+
+C – For a good performance - the students have a good knowledge of the subject and can discuss about the oral questions in a good way. The student have solved the assignments before the deadline and presented artifacts showing he/she have a good level of understanding for all aspects of the relevant material.
+
+E – For a performance meeting only the minimum requirements for acceptance on each examination steps.
+
+Fx – For a performance which does not meet minimum requirements for acceptance on each examination steps.
+
+F – For a performance which is unacceptable in all respects.
