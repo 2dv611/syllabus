@@ -1,5 +1,12 @@
 ## Content
-
+Deploying and Releasing Applications
+* Release Strategy
+* Staging Environments
+* Going to production
+* Zero-Downtime Releases
+  * Blue-green deployments
+  * Canary Releasing
+* Tips and Tricks
 
 
 ---
@@ -57,7 +64,7 @@ A document that describes how to:
 
 
 --
-## The first deplyment
+## The first deployment
 > “The first deployment of any application should happen in the first iteration when you showcase your first stories or requirements to the customer.”<!-- {_style="font-size: 75%"} -->
 
 After this first iteration, you should have the following in place:
@@ -70,7 +77,7 @@ Note:
 “How different is the production environment from my development environment?”
 
 
---
+---
 ## Staging Environments
 Last step before going to production
 * close replica of production environment 
@@ -84,14 +91,41 @@ Last step before going to production
 * Deploy every change that passes acceptance tests to your staging environment (although not necessarily to production).
 
 
---
+---
 ## Going to production
-* if everything works out in our staging environment we can move on to production
-* take a backup of the production environment before deploying the new version
-* if something goes wrong you cant redeploy the old version and restore the backup
+* deploying to production can lead to down time
+* when should we run the deploy
+
+Steps for deploying to production:
+* if everything works out in our staging environment <br/>we can move on to production
+* take a backup of the production environment before <br/>deploying the new version
+* smoke test
+* if something goes wrong you can redeploy the old <br/>version and restore the backup
 
 
 --
+## Rolling Back Deployments
+If something goes wrong you need to be able to roll back to a working version
+<!-- {_style="font-size: 80%"} -->
+* can be challenging
+  - if release change data
+  - if release involve more than one system
+* create a plan for rolling back a release
+  - backup the state of your production system
+  - practice your rollback plan
+* methods of performing a rollback
+  - redeploying the previous good version
+    - +simplest way to roll back
+    - -lead to downtime
+    - -hard to debug what went wrong
+    - -restoring DB can lead to data lose
+  - blue-green deployments
+  - canary releasing
+
+<!-- {_style="font-size: 70%"} -->
+
+
+---
 ## Zero-Downtime Releases
 * also known as hot deployment
 * switching users from one release to another happens nearly instantaneously
@@ -182,12 +216,7 @@ Some notes about A/B testing and canary releasing
 * canary rollout should complete in minutes or hours.
 
 
---
-## Rolling Back Deployments
-*
-
-
---
+---
 ## Tips and Tricks
 
 * Log deployment activities
