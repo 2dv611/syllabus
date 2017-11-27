@@ -40,7 +40,6 @@
           <td style="vertical-align: top;">w47</td>
           <td>
               <ul>
-                <li>Lecture 04 - Continuous Delivery</li>
                 <li>Seminar report</li>
                 <li>Group Project</li>
               </ul>
@@ -50,7 +49,7 @@
           <td style="vertical-align: top;">w48</td>
           <td>
               <ul>
-                <li>Lecture 05 - Deployment Strategies</li>
+                <li>Lecture 04 - Deploying and Releasing Applications</li>
                 <li>Group Project</li>
                 <li><strong>08.00am 27 Nov – Deadline</strong> handling in Assignment</li>
               </ul>
@@ -60,7 +59,7 @@
           <td style="vertical-align: top;">w49</td>
           <td>
               <ul>
-                <li>Lecture 06 - Guest Lecture (Case Study)</li>
+                <li>Lecture 05 - Guest Lecture (Case Study)</li>
                 <li>Group Project</li>
               </ul>
           </td>
