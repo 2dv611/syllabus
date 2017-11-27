@@ -74,15 +74,15 @@ Since the grade is individual you have the chance to reflect over your (and the 
   * What have you learn during this assignment
   * What would you done in another way if you had the chance
 
-Format: pdf
-Email: 2dv611@lnu.se
+* Format: pdf
+* Email: 2dv611@lnu.se
 
 ### Reflection on the other groups pipeline
 In this step you should do a group reflection on the other groups work. This means that you as a group should test it and see how easy it is to work with, how the documentation is set up and so on.
 Only one report per group. 
 
-Format: pdf
-Email: 2dv611@lnu.se
+* Format: pdf
+* Email: 2dv611@lnu.se
 
 
 #### Grading matrix
