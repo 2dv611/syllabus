@@ -9,7 +9,7 @@ Deploying and Releasing Applications
 * Tips and Tricks
 
 ## Resources
-- [HTML-presentation](https://rawgit.com/2dv611/syllabus/master/resources/lectures/04_continuous_delivery/index.html#/)
+- [HTML-presentation](https://rawgit.com/2dv611/syllabus/master/resources/lectures/04_deploying_and_releasing_applications/index.html#/)
 - [Recording](https://youtu.be/#?t=14m57s&list=PLSWJPPj5sKmry_AUw35ypwxNBUU9YK1K-) 2017-11-28, 13.15 (Youtube)
 
 <br />
