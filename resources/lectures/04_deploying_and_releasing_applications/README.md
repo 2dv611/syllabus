@@ -21,3 +21,4 @@ Chapter 10 & 12
 ## Articles
 * [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
 * [Facebook - Rapid release at massive scale](https://code.facebook.com/posts/270314900139291/rapid-release-at-massive-scale)
+  * [From 2013 - The Facebook Release Process](https://www.infoq.com/presentations/Facebook-Release-Process)
