@@ -19,4 +19,5 @@ Deploying and Releasing Applications
 Chapter 10 & 12
 
 ## Articles
-[Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
+* [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
+* [Facebook - Rapid release at massive scale](https://code.facebook.com/posts/270314900139291/rapid-release-at-massive-scale)

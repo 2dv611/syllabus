@@ -232,3 +232,6 @@ Some notes about A/B testing and canary releasing
 ## Reading
 
 > Chapter 10 and 12 in the Continuous Delivery book by Humble and Farley
+
+* Facebook - Rapid release at massive scale
+  * https://code.facebook.com/posts/270314900139291/rapid-release-at-massive-scale
