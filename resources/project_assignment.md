@@ -64,6 +64,7 @@ Since the grade is individual you have the chance to reflect over your (and the 
 
 * Background of the project
 * Choice of technology - with motivation
+* Describing the workflows and pipelines in your solution
 * Your work
   * What have you done in the project
   * Your time report
