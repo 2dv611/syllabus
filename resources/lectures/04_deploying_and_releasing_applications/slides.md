@@ -53,7 +53,7 @@ What latency are clients expecting?<br />
 --
 ## The Release Plan
 A document that describes how to:
-* release the application för the first time
+* release the application for the first time
 * smoke-test the application
 * back out if something go wrong during the deployment
 * back up and restore the application’s state
@@ -130,7 +130,7 @@ If something goes wrong you need to be able to roll back to a working version
 * also known as hot deployment
 * switching users from one release to another happens nearly instantaneously
 * can be problematic and hard to implement
-  - how to handel shared resources like, database, services, static resources
+  - how to handle shared resources like, database, services, static resources
 * Blue-green deployments
 * Canary Releasing
 
