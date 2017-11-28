@@ -60,7 +60,7 @@ A document that describes how to:
 * update the application without destroying the application’s state
 * rollback if somethings go wrong
 * monitoring the application
-* log problems from previous deployments, and their solutions
+* log problems from previous deployments and their solutions
 
 
 --
