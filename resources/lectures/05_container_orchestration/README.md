@@ -1,5 +1,7 @@
 ## Content
-
+* Container Orchestration
+  * Kubernetes
+  * Demo - Kubernetes in OpenStack
 
 ## Resources
 - [HTML-presentation](https://rawgit.com/2dv611/syllabus/master/resources/lectures/05_container_orchestration/index.html#/)
