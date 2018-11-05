@@ -3,8 +3,8 @@
 * The idea behind this course
   * What this course focus on 
   * What we expect you to know
-* Common words and definition used in this course
-* The examination assignments
+* Definitions used in this course
+* ~~The examination assignment~~
 
 Note: Tralla
 
@@ -12,9 +12,8 @@ Note: Tralla
 ---
 ## Why this course?
 
-* Focus on delivering software
+* Focus on delivering software to production
 * Building deployment pipelines
-* Taking stuff to production
 * Prepare for thesis?
 * Prepare for working with software...with other people
   * There will be some coding...
@@ -27,9 +26,10 @@ Note: Tralla
   * Unit, acceptance, integration, non-functional
   * Writing and implement
 * Working with Git
-  * We will focus on more advanced using
+  * We will focus on using git i groups
 * Writing code
-* Setting up infrastructure for given software
+* Setting up infrastructure for given service
+  * Provisioning servers and so on...
 * Taking responsibility for your own learning
 
 Note: How to write test, when to use them, different kinds and so on.
@@ -42,8 +42,10 @@ Note: How to write test, when to use them, different kinds and so on.
   * The platform for delivering software eg. deployment pipeline 
   * Validates after every stage in the pipeline (commit, acceptance, staging, production) 
 * Service delivery flow 
-  * The trip from the beginning to the end
+  * The flow from the beginning to the end
   * Both automatic and manual approvals depending on the step
+* Gate
+  * A limit that prevents the flow. Manual QA for instance
 
 ![pipeline](./images/pipe02.png)
 
@@ -52,19 +54,13 @@ Note: How to write test, when to use them, different kinds and so on.
 ## Some more definitions
 * Artifacts 
   * Products produced during the development of software
-* Release Candidate
-  * The end result of the build phase. May or may not be deployed
-* Release
-  * Successful completion of an entire flow; including deployment
-* Deployment
-  * Pushing a release into production
-* Gate
-  * A limit that prevents the flow. Manual QA for instance
-* Staging
-  * Environment where integration tests could run
-
-
-
+* Software package
+  * During the build step
+  * A container or single file that contains every thing to install the application, patch or library
+* Package repository
+  * A kind of repository holding produced packages/artifacts
+* CI server
+  * A software used for building service delivery platforms
 
 --
 ## Continuous Integration
@@ -78,9 +74,10 @@ Note: How to write test, when to use them, different kinds and so on.
 * Automated testing
   * fast test runs
 * Commit every day
-  * If a commit fails - fix it directly
+  * If a commit fails - fix it as fast as possible
 * Everyone can see the results of the latest build
   * Transparence
+
 
 
 
@@ -119,28 +116,14 @@ Note: How to write test, when to use them, different kinds and so on.
 ---
 ## How we will practice this?
 
-* Individual preparation for the seminar
+* Individual preparation in form of a report
   * Getting the fundamental knowledge
   * Thinking about a real problem
-  * Seminar be like a workshop
+  * Reading other reports from group members
 * Group project
   * Setting up the pipeline
   * Working as a group of developer through the pipeline
-  * Continuous Improvement!
+    * Continuous Improvement!
 
 
-
---
-## The project
-
-* Service delivery platform for Slack plug-ins for the CoursePress organization
-  * Analyze the problem
-  * Identifying the parts of the flow
-  * Setting up the pipeline
-* Develop a plug-in
-  * Using your pipeline as a developer
-  * Using Continuous Integration in a team
-    * Everyone must commit small changes with confidence
-    * Plans for handling failing
-  * Producing artifacts and infrastructure
 
