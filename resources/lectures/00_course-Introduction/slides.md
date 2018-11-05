@@ -23,6 +23,11 @@
 
 
 ---
+## Moving
+![Sorry, we are moving](https://media.giphy.com/media/d7fTn7iSd2ivS/giphy.gif)
+
+
+---
 ## Approach
 * The course is divided into two parts
     * Continuous Delivery Techniques
