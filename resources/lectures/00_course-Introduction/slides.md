@@ -57,6 +57,7 @@
       <td>
         <ul>
           <li>Start working on the assignment</li>
+          <li>Lecture 03 - Continuous Integration</li>
         </ul>
       </td>
     </tr>
@@ -64,7 +65,6 @@
       <td style="vertical-align: top;">w47</td>
       <td>
         <ul>
-          <li>Lecture 03 - Continuous Integration</li>
           <li>Assignment</li>
         </ul>
       </td>
