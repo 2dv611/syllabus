@@ -42,22 +42,13 @@
   </thead>
   <tbody>
     <tr>
-      <td style="vertical-align: top;">w44</td>
+      <td style="vertical-align: top;">w45</td>
       <td>
         <ul>
           <li>Lecture 00 – Course Introduction </li>
           <li>Lecture 01 - Introduction and definitions</li>
-          <li>Go through the Study Material</li>
-          <li>Start working on the assignment</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;">w45</td>
-      <td>
-        <ul>
           <li>Lecture 02 - Delivering software</li>
-          <li>Assignment</li>
+          <li>Go through the Study Material</li>
         </ul>
       </td>
     </tr>
@@ -65,8 +56,16 @@
       <td style="vertical-align: top;">w46</td>
       <td>
         <ul>
+          <li>Start working on the assignment</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">w47</td>
+      <td>
+        <ul>
           <li>Lecture 03 - Continuous Integration</li>
-          <li>Seminar</li>
+          <li>Assignment</li>
         </ul>
       </td>
     </tr>
@@ -85,18 +84,19 @@
   </thead>
   <tbody>
     <tr>
-      <td style="vertical-align: top;">w47</td>
+      <td style="vertical-align: top;">w48</td>
       <td>
         <ul>
           <li>Lecture 04 - Continuous Delivery</li>
-          <li>Group Project</li>
           <li>
-            <strong>10.00am 22 Nov – Deadline</strong> handling in Assignment</li>
+            <strong>08.00am 26 Nov – Deadline</strong> handling in Assignment
+          </li>
+          <li>Starting up the group project</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">w48</td>
+      <td style="vertical-align: top;">w49</td>
       <td>
         <ul>
           <li>Lecture 05 - Deployment Strategies</li>
@@ -105,7 +105,7 @@
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">w49</td>
+      <td style="vertical-align: top;">w50</td>
       <td>
         <ul>
           <li>Lecture 06 - Guest Lecture (Case Study)</li>
@@ -128,7 +128,7 @@
   </thead>
   <tbody>
     <tr>
-      <td style="vertical-align: top;">w50-02</td>
+      <td style="vertical-align: top;">w51-03</td>
       <td>
         <ul>
           <li>Group Project</li>
@@ -136,11 +136,11 @@
       </td>
     </tr>
     <tr>
-      <td style="vertical-align: top;">w02</td>
+      <td style="vertical-align: top;">w03</td>
       <td>
         <ul>
           <li>
-            <strong>Jan 11th - Deadline</strong> oral hearing</li>
+            <strong>Jan 16th - Deadline</strong> oral hearing</li>
         </ul>
       </td>
     </tr>
@@ -164,14 +164,13 @@
 ## Course webpage
 [https://coursepress.lnu.se/kurs/continuous-delivery](https://coursepress.lnu.se/kurs/continuous-delivery/)
 * Everything static + news
-* Slack: Discussions and questions [#2DV611-cd](https://coursepress.slack.com/archives/ 2DV611-cd)
+* Slack: Discussions and questions [#2DV611-cd](https://coursepress.slack.com/archives/2DV611-cd)
 * 2DV611@lnu.se (Private matters only!)
 
 <!-- {_style="margin-right: 25%"} -->
 
 
 ---
-<!-- webpage 
+<!-- Course evaluation -->
 ## Course evaluation
-[ 2DV611 Course Evaluation Spring 2016]( 2DV611-course-evaluation-vt16.pdf)
--->
+[ 2DV611 Course Evaluation 2017](2DV611-course-evaluation-ht17.pdf)
