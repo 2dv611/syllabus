@@ -29,14 +29,14 @@ Note: Tralla
   * We will focus on using git i groups
 * Writing code
 * Setting up infrastructure for given service
-  * Provisioning servers and so on...
+  * Provisioning servers, containers...
 * Taking responsibility for your own learning
 
 Note: How to write test, when to use them, different kinds and so on.
 
 
 ---
-## Some definitions
+### Some definitions
 
 * Service delivery platform
   * The platform for delivering software eg. deployment pipeline 
@@ -45,7 +45,7 @@ Note: How to write test, when to use them, different kinds and so on.
   * The flow from the beginning to the end
   * Both automatic and manual approvals depending on the step
 * Gate
-  * A limit that prevents the flow. Manual QA for instance
+  * A condition for going further in the flow. 
 
 ![pipeline](./images/pipe02.png)
 
@@ -61,6 +61,7 @@ Note: How to write test, when to use them, different kinds and so on.
   * A kind of repository holding produced packages/artifacts
 * CI server
   * A software used for building service delivery platforms
+
 
 --
 ## Continuous Integration
