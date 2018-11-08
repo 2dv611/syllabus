@@ -5,7 +5,7 @@ This text describes the first report in the course 2DV611. This report is a indi
 In this report you should show that you have a good understanding for the theoretical parts from the first lectures in the course but also done some investigation and thinking before the project assignment starts. The report shall be divided into five different part.
 
 ### Part 1 - Introducing the problem context
-Iin the first part you shall describe the theoretical framework for the reader of this report. You should concentrate on the first three lectures in the course and try to explain terms and definitions like:
+In the first part you shall describe the theoretical framework for the reader of this report. You should concentrate on the first three lectures in the course and try to explain terms and definitions like:
 
 * Continuous Integration
 * Continuous Delivery
@@ -27,8 +27,8 @@ In this part of the report you should investigate and present your findings abou
 * The support for notifications during the build process
 * ...
 
-### Part 3 - Finding a interesting open-source project
-In this part you shall describe your findings when trying to find an open source project that could be used when building the delivery platform described in the project assignment. You are pretty free to chose what ever project you like but you should be prepared to motivate your choice. There are some point to think about that you should point at in your defending of choice:
+### Part 3 - Finding a interesting open-source web application project
+In this part you shall describe your findings when trying to find an open source web application that could be used when building the delivery platform described in the project assignment. You are pretty free to chose what ever project you like but you should be prepared to motivate your choice. There are some point to think about that you should point at in your defending of choice:
 
 * The project should have a test suit since that is an important part of the delivery pipeline and you don´t what to write a whole test suit yourself (in this course)
 * Think about the ability to change code. You should try your pipeline solution often and as real as possible so think about the complexity of the project, how easy it will be to make sensible and realistically code changes
