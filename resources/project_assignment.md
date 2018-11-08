@@ -20,6 +20,8 @@ This assignment will have several parts and learning objectives:
   * Yes, there will be some coding and development, One group, many small commits, code always ready for production
 * Automate deployment in different environment maximizing the feedback speed of errors/bugs and the confidence in the code
   * Proper integration tests, notifications when failing and so on
+* Getting the code changes all the way to production
+  * bla
 
 We will not specify a long list of functional requirement. At this level you should be able to think about the problem and identify wanted features by your self. By reading the literature and article you will get the understanding of the parts implemented in a good deployment pipeline and how to bring your software and code changes to production in a fast, confident and secure way.
 
@@ -46,7 +48,7 @@ There are different examinations in this part
 
 ### Individual report from the group work
 
-Since the grade is individual you have the chance to reflect over your (and the groups) work in a personal report. It will only be read by the examiners. The goal of the repost is to show your involvement and understanding of the project along with a more detailed view of what you have done and how much time you have spend on the assignment. The following part should (at least) be part of the report. Feel free to add own headlines. 
+Since the grade is individual you have the chance to reflect over your (and the groups) work in a personal report. It will only be read by the examiners. The goal of the report is to show your involvement and understanding of the project along with a more detailed view of what you have done and how much time you have spend on the assignment. The following part should (at least) be part of the report. Feel free to add own headlines.
 
 * Background of the project
 * Choice of technology - with motivation
@@ -60,13 +62,12 @@ Since the grade is individual you have the chance to reflect over your (and the 
   * How have the group worked together
   * What have you learn during this assignment
   * What would you done in another way if you had the chance
-
 * Format: pdf
 * Email: 2dv611@lnu.se
 
 ### Reflection on the other groups pipeline
 In this step you should do a group reflection on the other groups work. This means that you as a group should test it and see how easy it is to work with, how the documentation is set up and so on.
-Only one report per group. 
+Only one report per group.
 
 * Format: pdf
 * Email: 2dv611@lnu.se
