@@ -48,7 +48,7 @@ During this meetings you should describe what you have done, how you have separa
 
 Some meeting have pre-defined topics that should be prepared in advanced:
 
-* Meeting 1 - The group should have decided on a open source application and disused the deployment pipeline
+* Meeting 1 - The group should have decided on a open source application and discussed the deployment pipeline
 * Meeting 2 - The application should be up and running the production environment, this could be done manually
 * Meeting 3 - ...
 * Meeting 4 - ...
