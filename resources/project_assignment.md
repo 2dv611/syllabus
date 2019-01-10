@@ -37,9 +37,11 @@ To facilitate you in this assignment, we will provide you with a variety of tool
 * Docker images registry - for storing your docker images, this could also be done within your CI server
 * CSCloud - this will host your Kubernetes cluster and images registry. You will use it for CI server, testing ect.
 
+<!--
 ### Evaluate an other groups development workflow
 At the end of the course your group shall evaluate an other groups development workflow.
 This means that you must provide adequate documentation on how to do that in your solution. This could be in the form of a README or a video tutorial. With this documentation one should be able to make a code change and make that go thru your pipeline into the production environment.
+-->
 
 ## Iterative meetings - Supervisor meetings
 During the project the group will have meetings with the course management. There are several pass booked into the course schedule. This meetings are mandatory. Your group decides which of you that will participate in the meetings (all or just one person) but some should always be there.
@@ -62,8 +64,11 @@ The examination is divided i the following parts::
   * The artifact of the group work, should be provided in the Github group repository along with a group report. The report should describe the underlying system for the service delivery platform
 * Individual report from the group work
   * In this project you should write a own individual group report to show your own involvement in the project (see below for more instructions)
+
+<!--
 * Group reflection on the other group development workflow
   * In the end of the course you should reflect on one other group's development work flow. Only one report per group.
+-->
 
 The individual report should be emailed to 2DV611@lnu.se in PDF-format all other documentation should reside in the Github repository.
 
