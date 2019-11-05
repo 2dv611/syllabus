@@ -36,9 +36,10 @@
 ---
 ## Approach
 * The course is divided into two parts
-    * Continuous Delivery Techniques
+    * Continuous Delivery Techniques (G)
       * Theory and report
-    * Group Project
+    * Group Project + Oral hearing (A-F)
+      * Theory on the course
       * Building stuff...
 
 <!-- {_style="font-size: 90%"} -->
