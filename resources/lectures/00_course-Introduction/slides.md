@@ -73,6 +73,20 @@
 * Oral hearing
 
 
+--
+### Grade on course
+
+* A - For an excellent performance 
+  * A very good knowledge of the subject and can discuss about the oral questions on a high level. 
+  * Solving the assignments before the deadline and presented a work showing he/she have a high level of understanding for all aspects of the relevant material.
+* C – For a good performance 
+  * Good knowledge of the subject and can discuss about the oral questions in a good way. 
+  * Solving the assignments before the deadline and presented work showing he/she have a good level of understanding for all aspects of the relevant material.
+* E – For a performance meeting only the minimum requirements for acceptance on each examination steps.
+* Fx – For a performance which does not meet minimum requirements for acceptance on each examination steps.
+* F – For a performance which is not acceptable
+
+
 ---
 <!-- webpage -->
 ## Course web page
