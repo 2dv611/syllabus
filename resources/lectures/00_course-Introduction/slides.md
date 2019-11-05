@@ -53,6 +53,7 @@
     * Investigate CI-servers
     * Draft of pipeline
     * Try to choose open source project to work with
+  * Peer-review
 * More material/resources will appear on course page
   * Working on some guest lecture...
 

@@ -26,11 +26,12 @@ Note: Tralla
   * Unit, acceptance, integration, non-functional
   * Writing and implement
 * Working with Git
-  * We will focus on using git i groups
+  * We will focus on using git in groups
 * Writing code
-* Setting up infrastructure for given service
+* Familiar to Docker and Kubernetes
   * Provisioning servers, containers...
 * Taking responsibility for your own learning
+  * want to learn...
 
 Note: How to write test, when to use them, different kinds and so on.
 
@@ -77,7 +78,7 @@ Note: How to write test, when to use them, different kinds and so on.
 * Commit every day
   * If a commit fails - fix it as fast as possible
 * Everyone can see the results of the latest build
-  * Transparence
+  * Transparency
 
 
 
@@ -108,7 +109,7 @@ Note: How to write test, when to use them, different kinds and so on.
 * Reduced risk
 * Shorter time from keyboard to production
 * Less wait time
-  * International timespans
+  * International time spans
 * Continuous Improvement
 * Job satisfaction
 
