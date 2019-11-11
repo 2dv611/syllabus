@@ -11,13 +11,13 @@
 
 ## Resources
 - [HTML-presentation](https://rawgit.com/2dv611/syllabus/master/resources/lectures/03_continuous_integration/index.html#/)
-- [Recording](https://youtu.be/VcoLuTRvEoA?t=14m57s&list=PLSWJPPj5sKmoqjJLHTdNsZPg0yeGMdd11) 2017-11-14, 09.15 (Youtube)
+- [Recording](https://youtu.be/VcoLuTRvEoA?t=14m57s&list=PLSWJPPj5sKmoqjJLHTdNsZPg0yeGMdd11)
 
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VcoLuTRvEoA?t=14m57s&list=PLSWJPPj5sKmoqjJLHTdNsZPg0yeGMdd11" frameborder="0" allowfullscreen></iframe>
 
 ## Literature
-Chapter 3, 5, 7 and 14
+Chapter 3 (to p. 75), 5 (to page 123), 7 (to page 178) and 14(381-393, 405 - 416)
 
 ## Articles
 * About testing
