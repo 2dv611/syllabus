@@ -9,6 +9,7 @@
 - [HTML-presentation](https://rawgit.com/2dv611/syllabus/master/resources/lectures/01_definitions/index.html#/)
 - [Recording](https://youtu.be/c3Fv5P7AOj4?t=30m08s&list=PLSWJPPj5sKmoqjJLHTdNsZPg0yeGMdd11)
 
+<strong>OBS! in the recording a seminar is mention. Ignore that since we don have that this year! We will have group meetings instead</strong>
 
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c3Fv5P7AOj4?t=30m08s&list=PLSWJPPj5sKmoqjJLHTdNsZPg0yeGMdd11" frameborder="0" allowfullscreen></iframe>
