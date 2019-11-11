@@ -6,7 +6,7 @@
     * Some kind of demo...
 * Branching vs Continuous Integration
   * Patterns
-  * Merging, rebasing
+  * Merging, re-basing
   * Is branching bad?
 
 ## Resources
@@ -19,7 +19,7 @@
 ## Literature
 Chapter 3 (to p. 75), 5 (to page 123), 7 (to page 178) and 14(381-393, 405 - 416)
 
-## Articles
+## Related articles
 * About testing
   * https://medium.com/@eliasnogueira/trust-your-pipeline-automatically-testing-an-end-to-end-java-application-4a33232180c3
 * Git workflow
