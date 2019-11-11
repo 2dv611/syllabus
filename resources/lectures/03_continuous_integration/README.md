@@ -13,6 +13,8 @@
 - [HTML-presentation](https://rawgit.com/2dv611/syllabus/master/resources/lectures/03_continuous_integration/index.html#/)
 - [Recording](https://youtu.be/VcoLuTRvEoA?t=14m57s&list=PLSWJPPj5sKmoqjJLHTdNsZPg0yeGMdd11)
 
+<strong>Ignore the talk about groups and seminar in the end</strong>
+
 <br />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VcoLuTRvEoA?t=14m57s&list=PLSWJPPj5sKmoqjJLHTdNsZPg0yeGMdd11" frameborder="0" allowfullscreen></iframe>
 
