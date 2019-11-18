@@ -17,6 +17,7 @@ This assignment have several parts and learning objectives:
 * Getting the code changes all the way to production
   * Your web application should be running in a production environment as a last step of the deployment pipeline.
 
+<br>
 We will not specify a long list of functional requirement. At this level you should be able to think about the problem and identify wanted features by your self. By reading the literature and article you will get the understanding of the parts implemented in a good deployment pipeline and how to bring your software and code changes to production in a fast, confident and secure way.
 We are aiming for Continuous Improvement!
 
