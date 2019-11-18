@@ -1,74 +1,64 @@
 ## Project Assignment - 2DV611
 
-This text will describe the project assignment for the course 2dv611 at Linnaeus University, Kalmar, Sweden.
+This text will describe the project assignment for the course 2DV611 at Linnaeus University, Kalmar, Sweden.
 
 ### A deployment pipeline
 
-The assignment is a group project where you should develop a deployment pipeline supporting a continuous delivery workflow of an open source application.
-The application should be an open source web application, which is up to the group to decide based upon the work you did in the reports.
+The assignment is a group project where you should develop a deployment pipeline supporting a continuous delivery workflow of an open source web application. Which web application you will use is up to the group to decide based upon the work you did in the reports.
 
-The deployment pipeline should be build for a developer team to continuously develop and maintain a web application.
-The goal is to achieve a pipeline where a new developer can continue the development of the application in a transparent, easy and quality way.
+The deployment pipeline should be build for a developer team to continuously develop and maintain a web application. The goal is to achieve a process where a new developer can continue the development of the application in a transparent, easy and quality way.
 
 This assignment have several parts and learning objectives:
 
-* Getting the understanding for producing deployment pipelines, including adding CI-servers, artifact repositories and so on.
-  * The first draft of this will be done in the individual theoretical preparation in the report, then implemented  and improved as a group assignment
-* Getting a understanding for how to implement testing of software and application in the deployment pipeline
-  * After the individual report assignment is handed in, you will be grouped together and your group will set up the deployment pipeline from the outcomes of the reports
-* Working in group with a real software project, The application, using integration techniques in your deployment pipeline
-  * Yes, there will be some coding and development, One group, many small commits, try to keep the code ready for production
+* Getting the understanding for producing deployment pipelines, including CI-servers, artifact repositories and so on.
+* Getting a understanding for how to implement automated testing of software and application in the deployment pipeline
+* Working in group with a real software project with some bigger code base and test suits. 
 * Automate deployment in different environment maximizing the feedback speed of errors/bugs and the confidence in the code
-  * Proper integration tests, notifications when failing and so on
 * Getting the code changes all the way to production
-  * Your web application should be running in a production environment as a last step of the deployment pipeline, see production environment for more information.
+  * Your web application should be running in a production environment as a last step of the deployment pipeline.
 
 We will not specify a long list of functional requirement. At this level you should be able to think about the problem and identify wanted features by your self. By reading the literature and article you will get the understanding of the parts implemented in a good deployment pipeline and how to bring your software and code changes to production in a fast, confident and secure way.
+We are aiming for Continuous Improvement!
 
-We are aiming for continuous Improvement!
+### As a individual project member
+To get a better understanding of a more complex software, all project members must be active throughout the development. **Every member of the team should do a lot of commits** and you should use the idea behind continuous integration to get the experience needed. You should use some kind of ticket/issue system that will allow you to plan your work and for the examiner to view the individual work in the group. 
 
-To get a better understanding of a more complex software, all project members must be active throughout the development. **Every member of the team should do a lot of commits** and you should use the idea behind continuous integration to get the experience needed.
 
 ### Tools at your disposal
-To facilitate you in this assignment, we will provide you with a variety of tools and systems.
+To facilitate you in this assignment, we will provide you with a variety of tools and systems if you want. You are free to choose your own (otehr public cloud, SaaS:s and so on). The following will be provided for you never less.
 
 * 2DV611 organization Github repository - should be used for the examination artifacts and maybe planing
-* Production environment in the form of a Kubernetes Cluster
-* Docker images registry - for storing your docker images, this could also be done within your CI server
-* CSCloud - this will host your Kubernetes cluster and images registry. You will use it for CI server, testing ect.
+* Kubernetes Cluster - Two clusters per group
+* CSCloud - this will host your Kubernetes clusters where you should be able to install different kinds of servers/software you need.
 
-<!--
-### Evaluate an other groups development workflow
-At the end of the course your group shall evaluate an other groups development workflow.
-This means that you must provide adequate documentation on how to do that in your solution. This could be in the form of a README or a video tutorial. With this documentation one should be able to make a code change and make that go thru your pipeline into the production environment.
--->
 
 ## Iterative meetings - Supervisor meetings
-During the project the group will have meetings with the course management. There are several pass booked into the course schedule. This meetings are mandatory. Your group decides which of you that will participate in the meetings (all or just one person) but some should always be there.
+During the project the group will have meetings with the course management. There are several pass booked into the course schedule. This meetings are mandatory. Your group decides which of you that will participate in the meetings (all or just one person) but some should always be someone there.
 
-During this meetings you should describe what you have done, how you have separated the work and how you will work until the next meeting. Try to keep these meetings effective and be prepared. These meetings are not meant for tutoring, if you're having problems with your solution you should book an tutoring session with the course management.
+During this meetings you should describe what you have done during the week, how you have separated the work and how you will work until the next meeting. Try to keep these meetings effective and be prepared to guide the examiner through your progress. These meetings are not meant for tutoring though.
 
 Some meeting have pre-defined topics that should be prepared in advanced:
 
-* Meeting 1 - The group should have decided on a open source application and discussed the deployment pipeline
-* Meeting 2 - The application should be up and running the production environment, this could be done manually
-* Meeting 3 - ...
-* Meeting 4 - ...
+* Meeting 1 / course week 5 - The group should have decided on a open source application and discussed the deployment pipeline
+* Meeting 2 / course week 6 - The application should be up and running the production environment, this could be done manually
+* Meeting 3 / course week 7 - ...
+* Meeting 4 / course week 10 - ...
+* Meeting 5 / course week 11 - This meeting is optional.
+
+See below for more info about the meetings
 
 ## Examination
-The examination is divided i the following parts::
+The examination is divided into the following parts::
 
 * Oral individual examination
   * Here you have to book a examination time with the course management and you will answer a few theoretical questions from the course.
 * Group project
-  * The artifact of the group work, should be provided in the Github group repository along with a group report. The report should describe the underlying system for the service delivery platform
-* Individual report from the group work
-  * In this project you should write a own individual group report to show your own involvement in the project (see below for more instructions)
+  * The artifact of the group work, should be provided in the Github group repository along with documentation. 
+* A documentation for a new developer
+  * The group should provide a documentation for a new developer that will start working on the software.
+    * Be sure to describe the underling process for each step, where the developer can find information. What will happened when errors occur, where to visually view the result and so on.
+  * The examiner will follow these instructions to evaluate the pipeline so put some effort in the documentation!
 
-<!--
-* Group reflection on the other group development workflow
-  * In the end of the course you should reflect on one other group's development work flow. Only one report per group.
--->
 
 The individual report should be emailed to 2DV611@lnu.se in PDF-format all other documentation should reside in the Github repository.
 
@@ -77,14 +67,13 @@ The individual report should be emailed to 2DV611@lnu.se in PDF-format all other
 Since the grade is individual you have the chance to reflect over your (and the groups) work in a personal report. It will only be read by the examiners. The goal of the report is to show your involvement and understanding of the project along with a more detailed view of what you have done and how much time you have spend on the assignment. The following part should (at least) be part of the report. Feel free to add own headlines.
 
 * Your work
-  * What have you done in the project
-  * Your time report
+  * What have been your focus in the project
 * Personal reflection of the project
-  * Problems and solutions
   * What is good, what is bad
   * How have the group worked together
   * What have you learn during this assignment
   * What would you done in another way if you had the chance
+
 
 #### Grading matrix
 The final grade (A-F) is a grade based on all the above examination assignments.
