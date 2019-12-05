@@ -12,7 +12,7 @@ The main thing in this course is to build an effective and friction free pipelin
 
 In this file you define stages that could include jobs. A job is something you do in the pipeline, that often requires some kind of scripting or commando. If we look at an example:
 
-´´´
+```yaml
 # if no docker image is defined use this
 image: "node:alpine"
 
@@ -62,7 +62,7 @@ deploy:
   script:
     - echo 'code that deploy here'
 
-´´´
+```
 
 As you probably can figure out the pipeline have four steps; commit, build, staging and production. Each stage have one or more jobs that is described as the actual work the pipeline does. In this case you could find lint and test command for instance.
 
