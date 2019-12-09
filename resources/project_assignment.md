@@ -42,8 +42,8 @@ Some meeting have pre-defined topics that should be prepared in advanced:
 
 * Meeting 1 / course week 5 - The group should have decided on a open source application and discussed the deployment pipeline
 * Meeting 2 / course week 6 - The application should be up and running the production environment, this could be done manually
-* Meeting 3 / course week 7 - ...
-* Meeting 4 / course week 10 - ...
+* Meeting 3 / course week 7 - A running pipeline
+* Meeting 4 / course week 10 - Optimizing...
 * Meeting 5 / course week 11 - This meeting is optional.
 
 See below for more info about the meetings
