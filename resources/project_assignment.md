@@ -26,7 +26,7 @@ To get a better understanding of a more complex software, all project members mu
 
 
 ### Tools at your disposal
-To facilitate you in this assignment, we will provide you with a variety of tools and systems if you want. You are free to choose your own (otehr public cloud, SaaS:s and so on). The following will be provided for you never less.
+To facilitate you in this assignment, we will provide you with a variety of tools and systems if you want. You are free to choose your own (other public cloud, SaaS:s and so on). The following will be provided for you never less.
 
 * 2DV611 organization Github repository - should be used for the examination artifacts and maybe planing
 * Kubernetes Cluster - Two clusters per group
@@ -44,7 +44,7 @@ Some meeting have pre-defined topics that should be prepared in advanced:
 * Meeting 2 / course week 6 - The application should be up and running the production environment, this could be done manually
 * Meeting 3 / course week 7 - A running pipeline
 * Meeting 4 / course week 10 - Optimizing...
-* Meeting 5 / course week 11 - This meeting is optional.
+* Meeting 5 / course week 11 - No meeting...
 
 See below for more info about the meetings
 
@@ -58,6 +58,7 @@ The examination is divided into the following parts::
 * A documentation for a new developer
   * The group should provide a documentation for a new developer that will start working on the software.
     * Be sure to describe the underling process for each step, where the developer can find information. What will happened when errors occur, where to visually view the result and so on.
+    * Will be defined more as an issue in your examination repo.
   * The examiner will follow these instructions to evaluate the pipeline so put some effort in the documentation!
 
 
